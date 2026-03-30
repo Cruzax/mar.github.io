@@ -1,0 +1,34 @@
+/* =============================================
+   COMPOSANT — Accordéon (page Pratiquer)
+   ============================================= */
+
+.accordion-item {
+  border: none;
+  border-left: 2px solid var(--rouge);
+  margin-bottom: 0.75rem;
+  border-radius: 0 !important;
+  background: var(--blanc);
+}
+
+.accordion-button {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  background: var(--blanc) !important;
+  color: var(--dark) !important;
+  border-radius: 0 !important;
+  padding: 1.25rem 1.5rem;
+}
+.accordion-button:not(.collapsed) {
+  background: var(--rouge-clair) !important;
+  color: var(--rouge) !important;
+  box-shadow: none;
+}
+.accordion-button::after {
+  opacity: 0.5;
+}
+
+.accordion-body {
+  padding: 1.5rem;
+  background: var(--blanc);
+}

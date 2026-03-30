@@ -1,0 +1,97 @@
+/* =============================================
+   COMPOSANT — Carousels (photos & témoignages)
+   ============================================= */
+
+/* Carousel photos */
+.carousel-item img {
+  height: 520px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 48px;
+  height: 48px;
+  background: var(--blanc);
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.9;
+  margin: 0 1rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60%;
+  filter: invert(1) sepia(1) saturate(10) hue-rotate(330deg);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--blanc);
+  opacity: 0.5;
+}
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: var(--ambre-doux);
+}
+
+/* Carousel témoignages */
+.temoignages-section {
+  background: var(--creme-fonce);
+  padding: 3.5rem 0;
+}
+
+.temoignage-quote {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--dark);
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.temoignage-auteur strong {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+.temoignage-auteur span {
+  font-size: 0.8rem;
+  color: var(--gris);
+}
+
+.temo-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+  padding: 0;
+}
+
+.temo-nav {
+  background: none;
+  border: 1.5px solid var(--gris-clair);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gris);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+.temo-nav:hover {
+  border-color: var(--ambre);
+  color: var(--ambre);
+}

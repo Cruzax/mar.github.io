@@ -1,0 +1,99 @@
+/* =============================================
+   COMPOSANT — Bandeau citation & nuage de mots
+   ============================================= */
+
+/* ── Bandeau citation (pleine largeur, centré) ── */
+.citation-band {
+  background: var(--rouge-clair);
+  border-top: 1px solid #F0D8D5;
+  border-bottom: 1px solid #F0D8D5;
+  padding: 4rem 0;
+  text-align: center;
+}
+.citation-band blockquote {
+  position: relative;
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-style: italic;
+  font-size: 1.45rem;
+  color: var(--dark);
+  max-width: 740px;
+  margin: 0 auto;
+  line-height: 1.6;
+  padding: 0 2rem;
+}
+.citation-band blockquote::before {
+  content: '\201C';
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 5rem;
+  color: var(--rouge);
+  opacity: 0.18;
+  position: absolute;
+  top: -1.6rem;
+  left: -0.5rem;
+  line-height: 1;
+}
+.citation-band cite {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--rouge);
+  display: block;
+  margin-top: 1.8rem;
+}
+.citation-band cite::before {
+  content: '— ';
+}
+
+/* ── Citation inline (dans une section de contenu) ── */
+.citation-inline {
+  position: relative;
+  margin: 2rem 0;
+  padding: 1.4rem 1.6rem 1.4rem 2rem;
+  background: var(--creme-fonce);
+  border-left: 3px solid var(--rouge);
+}
+.citation-inline p,
+.citation-inline > span {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--gris-fonce);
+  line-height: 1.65;
+  margin: 0;
+}
+.citation-inline cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-style: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--rouge);
+}
+
+/* Nuage de mots-clés */
+.nuage-mot {
+  display: inline-block;
+  padding: 0.35rem 0.9rem;
+  margin: 0.3rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  border-radius: 2px;
+  letter-spacing: 0.5px;
+  background: var(--blanc);
+  color: var(--gris-fonce);
+  border: 1px solid var(--creme-fonce);
+}
+.nuage-mot:nth-child(3n) {
+  background: var(--rouge-clair);
+  color: var(--rouge);
+  border-color: #F0D5D2;
+}
+.nuage-mot:nth-child(5n) {
+  background: var(--ambre-clair);
+  color: var(--ambre);
+  border-color: #F0DDB8;
+}

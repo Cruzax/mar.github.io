@@ -1,0 +1,102 @@
+/* =============================================
+   COMPOSANT — Cards (services, équipe, actualités)
+   ============================================= */
+
+/* --- Cards de services (accueil) --- */
+.service-card {
+  background: var(--blanc);
+  border: none;
+  border-radius: 0;
+  padding: 2.5rem 2rem;
+  height: 100%;
+  transition: transform 0.25s, box-shadow 0.25s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.1);
+}
+.service-card .card-icon {
+  font-size: 2rem;
+  color: var(--rouge);
+  margin-bottom: 1.2rem;
+}
+.service-card:nth-child(2) .card-icon {
+  color: var(--ambre);
+}
+.service-card h3 {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 0.75rem;
+}
+.service-card p {
+  font-size: 0.9rem;
+  color: var(--gris);
+}
+
+/* --- Cards membres de l'équipe --- */
+.membre-card {
+  background: var(--blanc);
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  height: 100%;
+  transition: box-shadow 0.25s;
+}
+.membre-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.membre-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  object-position: top;
+  filter: grayscale(15%) brightness(1.02);
+  transition: filter 0.3s;
+}
+.membre-card:hover img {
+  filter: grayscale(0%) brightness(1.04);
+}
+.membre-card .card-body { padding: 1.5rem; }
+.membre-card .card-title {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 0.2rem;
+}
+.membre-card .card-subtitle {
+  font-size: 0.72rem;
+  color: var(--rouge);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+.membre-card .card-text {
+  font-size: 0.85rem;
+  color: var(--gris);
+  line-height: 1.6;
+}
+
+/* --- Cards actualités --- */
+.actu-card {
+  background: var(--blanc);
+  border: none;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  transition: box-shadow 0.25s;
+}
+.actu-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+.actu-badge {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: var(--rouge-clair);
+  color: var(--rouge);
+  padding: 0.3rem 0.7rem;
+  display: inline-block;
+}

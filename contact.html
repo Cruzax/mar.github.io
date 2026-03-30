@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Association MAR</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand logo-brand" href="index.html">
+      <img src="images/logo-mar.png" alt="Association MAR" class="logo-img" onload="this.style.display='block';this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+      <span class="logo-texte">MAR</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+        <li class="nav-item"><a class="nav-link" href="theatre-forum.html">Le théâtre forum</a></li>
+        <li class="nav-item"><a class="nav-link" href="spectacles.html">Spectacles</a></li>
+        <li class="nav-item"><a class="nav-link" href="pratique.html">Pratiquer</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferences.html">Conférences</a></li>
+        <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+        <li class="nav-item"><a class="nav-link nav-cta active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<section>
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- FORMULAIRE -->
+      <div class="col-lg-7">
+        <h2 class="section-title">Envoyez-nous <em>un message</em></h2>
+        <div class="section-divider"></div>
+        <p style="color:var(--gris);">Vous souhaitez un atelier, un spectacle, une conférence ou des informations ? Remplissez ce formulaire et nous vous répondrons dans les meilleurs délais.</p>
+
+        <form class="mt-4" action="mailto:contact@assomar.fr" method="get" enctype="text/plain">
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label">Prénom & Nom *</label>
+              <input type="text" class="form-control" placeholder="Votre nom" required>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label">Email *</label>
+              <input type="email" class="form-control" placeholder="votre@email.fr" required>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label">Téléphone</label>
+              <input type="tel" class="form-control" placeholder="06 xx xx xx xx">
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label">Organisation</label>
+              <input type="text" class="form-control" placeholder="Votre structure ou association">
+            </div>
+            <div class="col-12">
+              <label class="form-label">Je suis intéressé·e par *</label>
+              <select class="form-control" id="interet" required>
+                <option value="" disabled selected>Choisissez une option</option>
+                <option value="atelier">Un atelier de découverte</option>
+                <option value="spectacle">Un spectacle (clé en main ou sur mesure)</option>
+                <option value="conference">Une conférence forum</option>
+                <option value="seminaire">Une animation de séminaire</option>
+                <option value="formation">Une formation de formateurs</option>
+                <option value="mensuels">Des ateliers mensuels</option>
+                <option value="autre">Autre / Renseignements</option>
+              </select>
+            </div>
+            <div class="col-12" id="spectacle-group" style="display:none;">
+              <label class="form-label">Spectacle concerné</label>
+              <select class="form-control" id="spectacle-select">
+                <option value="" disabled selected>Choisissez un spectacle</option>
+                <option>Sous silence</option>
+                <option>Entre idées reçues et vécus partagés</option>
+                <option>Ma famille est une ordure</option>
+                <option>Histoires de couples</option>
+                <option>Le travail d'équipe, c'est facile ?</option>
+                <option>Oser s'affirmer au quotidien</option>
+                <option>La santé, c'est dans ta tête ?</option>
+                <option>Tu sais mieux que moi ?</option>
+                <option>Enfants, adultes, déconditionnons-nous !</option>
+                <option>L'auto-détermination</option>
+                <option>La médiation sociale, un jeu d'enfant ?</option>
+                <option>Violences faites aux femmes</option>
+                <option>Poing levé ou bras croisés</option>
+                <option>C'est injuste mais ça peut changer !</option>
+                <option>L'éducation ça s'estime !</option>
+                <option>Burn out !</option>
+                <option>C'est mon choix !</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Votre message *</label>
+              <textarea class="form-control" rows="5" placeholder="Décrivez votre projet, vos besoins, vos questions…" required></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="rgpd" required>
+                <label class="form-check-label" for="rgpd" style="font-size:0.85rem; color:var(--gris);">
+                  J'accepte que mes données personnelles soient utilisées pour traiter ma demande, conformément à la <a href="mentions-legales.html#confidentialite" target="_blank">politique de confidentialité</a> de l'Association MAR. *
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <p style="font-size:0.8rem; color:var(--gris);">* Champs obligatoires. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. <a href="mentions-legales.html#droits">En savoir plus sur vos droits.</a></p>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-rouge w-100" style="padding:1rem; font-size:1rem;">
+                <i class="bi bi-send me-2"></i>Envoyer le message
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- INFOS CONTACT -->
+      <div class="col-lg-5">
+        <h2 class="section-title">Nos <em>coordonnées</em></h2>
+        <div class="section-divider"></div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+          <div>
+            <strong>Adresse</strong><br>
+            Association MAR<br>
+            1 rue de l'école<br>
+            25000 Besançon
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+          <div>
+            <strong>Email</strong><br>
+            <a href="mailto:contact@assomar.fr">contact@assomar.fr</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+          <div>
+            <strong>Téléphone</strong><br>
+            <a href="tel:0769181710">07 69 18 17 10</a>
+          </div>
+        </div>
+
+        <div class="contact-info-item">
+          <div class="contact-icon"><i class="bi bi-share-fill"></i></div>
+          <div>
+            <strong>Réseaux sociaux</strong><br>
+            <div class="mt-2 d-flex gap-2">
+              <a href="https://www.facebook.com/profile.php?id=61551824633043" class="social-link" target="_blank" title="Facebook">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PHOTOS BAS DE PAGE -->
+<section class="section-alt" style="padding:2rem 0;">
+  <div class="container">
+    <div class="row g-2">
+      <div class="col-4"><img src="images/spectacles/scene-02.jpg" class="img-fluid w-100" style="height:160px;object-fit:cover;" alt="MAR"></div>
+      <div class="col-4"><img src="images/spectacles/scene-15.jpg" class="img-fluid w-100" style="height:160px;object-fit:cover;" alt="MAR"></div>
+      <div class="col-4"><img src="images/spectacles/scene-16.jpg" class="img-fluid w-100" style="height:160px;object-fit:cover;" alt="MAR"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">M<em>A</em>R</div>
+        <p class="mt-2" style="font-size:0.9rem;">Méthodes Alternatives de Régulation<br>Promouvoir le dialogue social à travers le théâtre forum.</p>
+        <div class="mt-3">
+          <a href="https://www.facebook.com/profile.php?id=61551824633043" class="social-link" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+          <li><a href="theatre-forum.html">Le théâtre forum</a></li>
+          <li><a href="spectacles.html">Spectacles</a></li>
+          <li><a href="pratique.html">Pratiquer</a></li>
+          <li><a href="conferences.html">Conférences & séminaires</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Contact</h5>
+        <ul>
+          <li><i class="bi bi-geo-alt-fill me-2" style="color:var(--ambre-doux)"></i>1 rue de l'école, 25000 Besançon</li>
+          <li><i class="bi bi-envelope-fill me-2" style="color:var(--ambre-doux)"></i><a href="mailto:contact@assomar.fr">contact@assomar.fr</a></li>
+          <li><i class="bi bi-telephone-fill me-2" style="color:var(--ambre-doux)"></i><a href="tel:0769181710">07 69 18 17 10</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Association MAR — Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;opacity:.7;">Mentions légales</a> &nbsp;|&nbsp; <a href="mentions-legales.html#confidentialite" style="color:inherit;opacity:.7;">Confidentialité</a></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/cookies.js" defer></script>
+<script>
+(function() {
+  var interet = document.getElementById('interet');
+  var group = document.getElementById('spectacle-group');
+  var select = document.getElementById('spectacle-select');
+
+  // Affiche/cache le champ spectacle selon le dropdown
+  interet.addEventListener('change', function() {
+    group.style.display = this.value === 'spectacle' ? '' : 'none';
+  });
+
+  // Pré-remplissage depuis l'URL (?spectacle=Burn+out+!)
+  var params = new URLSearchParams(window.location.search);
+  var spec = params.get('spectacle');
+  if (spec) {
+    interet.value = 'spectacle';
+    group.style.display = '';
+    // Cherche l'option la plus proche
+    for (var i = 0; i < select.options.length; i++) {
+      if (select.options[i].text === spec || spec.includes(select.options[i].text) || select.options[i].text.includes(spec)) {
+        select.selectedIndex = i;
+        break;
+      }
+    }
+  }
+})();
+</script>
+</body>
+</html>

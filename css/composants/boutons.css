@@ -1,0 +1,54 @@
+/* =============================================
+   COMPOSANT — Boutons
+   ============================================= */
+
+/* Socle commun */
+.btn-rouge,
+.btn-ambre,
+.btn-outline {
+  display: inline-block;
+  border-radius: 2px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 0.85rem 2.2rem;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+/* Rouge — primaire */
+.btn-rouge {
+  background: var(--rouge);
+  color: var(--blanc);
+  border: 1.5px solid var(--rouge);
+}
+.btn-rouge:hover {
+  background: transparent;
+  color: var(--rouge);
+  text-decoration: none;
+}
+
+/* Ambre — secondaire */
+.btn-ambre {
+  background: var(--ambre);
+  color: var(--blanc);
+  border: 1.5px solid var(--ambre);
+}
+.btn-ambre:hover {
+  background: transparent;
+  color: var(--ambre);
+  text-decoration: none;
+}
+
+/* Outline — tertiaire */
+.btn-outline {
+  background: transparent;
+  color: var(--dark);
+  border: 1.5px solid var(--gris-clair);
+}
+.btn-outline:hover {
+  border-color: var(--ambre);
+  color: var(--ambre);
+  text-decoration: none;
+}

@@ -1,0 +1,178 @@
+/* =============================================
+   COMPOSANT — Catalogue de spectacles
+   (filtres, pitch cards, modals)
+   ============================================= */
+
+/* Couleurs spécifiques aux catégories */
+/* --rouge   = Adultes (variable globale)    */
+/* --ambre   = Entreprise & Pro              */
+/* #6B9E78   = Famille                       */
+/* #5B8AC8   = Jeunesse                      */
+
+/* Boutons de filtre */
+.filtre-btn {
+  background: var(--blanc);
+  border: 1.5px solid var(--creme-fonce);
+  color: var(--gris);
+  padding: 0.45rem 1.2rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+.filtre-btn.active {
+  background: var(--rouge);
+  border-color: var(--rouge);
+  color: var(--blanc);
+}
+.filtre-btn:hover:not(.active) {
+  background: var(--ambre);
+  border-color: var(--ambre);
+  color: var(--blanc);
+}
+
+/* Carte pitch */
+.pitch-card {
+  background: var(--blanc);
+  border-top: 3px solid var(--rouge);
+  padding: 1.5rem;
+  height: 100%;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.pitch-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* Variantes de couleur par catégorie */
+.pitch-card.entreprise { border-top-color: var(--ambre); }
+.pitch-card.famille    { border-top-color: #6B9E78; }
+.pitch-card.jeunesse   { border-top-color: #5B8AC8; }
+
+/* Étiquette catégorie */
+.pitch-cat {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--rouge);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.pitch-cat.entreprise { color: var(--ambre); }
+.pitch-cat.famille    { color: #6B9E78; }
+.pitch-cat.jeunesse   { color: #5B8AC8; }
+
+/* Titre */
+.pitch-titre {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin-bottom: 0.25rem;
+  line-height: 1.3;
+}
+
+/* Thématique */
+.pitch-theme {
+  font-size: 0.8rem;
+  color: var(--gris);
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+/* Résumé */
+.pitch-resume {
+  font-size: 0.85rem;
+  color: var(--gris-fonce);
+  line-height: 1.55;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+/* Infos pratiques (public, durée…) */
+.pitch-infos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--creme-fonce);
+}
+.pitch-infos span {
+  font-size: 0.72rem;
+  background: var(--creme);
+  color: var(--gris);
+  padding: 0.2rem 0.6rem;
+  letter-spacing: 0.5px;
+}
+
+/* Lien "Lire le pitch" */
+.pitch-lire {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--rouge);
+  text-transform: uppercase;
+  display: block;
+  margin-top: 0.75rem;
+}
+.pitch-card.entreprise .pitch-lire { color: var(--ambre); }
+.pitch-card.famille    .pitch-lire { color: #6B9E78; }
+.pitch-card.jeunesse   .pitch-lire { color: #5B8AC8; }
+
+/* Affichage/masquage filtré */
+.spectacle-item { transition: opacity 0.3s; }
+.spectacle-item.hidden { display: none; }
+
+/* Modals */
+.modal-header {
+  border-bottom: 2px solid var(--rouge);
+  background: var(--creme);
+}
+.modal-header.entreprise { border-bottom-color: var(--ambre); }
+.modal-header.famille    { border-bottom-color: #6B9E78; }
+.modal-header.jeunesse   { border-bottom-color: #5B8AC8; }
+
+.modal-title-main {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--dark);
+  margin: 0.3rem 0 0;
+}
+
+/* Mots-clés dans modal */
+.pitch-mot-cle {
+  display: inline-block;
+  background: var(--creme-fonce);
+  color: var(--gris-fonce);
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  margin: 0.2rem;
+  border-radius: 2px;
+}
+
+/* Question centrale dans modal */
+.pitch-question {
+  font-style: italic;
+  color: var(--gris);
+  border-left: 2px solid var(--ambre-doux);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Animation d'entrée des cartes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

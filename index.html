@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Association MAR — Théâtre Forum</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand logo-brand" href="index.html">
+      <img src="images/logo-mar.png" alt="Association MAR" class="logo-img" onload="this.style.display='block';this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+      <span class="logo-texte">MAR</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+        <li class="nav-item"><a class="nav-link" href="theatre-forum.html">Le théâtre forum</a></li>
+        <li class="nav-item"><a class="nav-link" href="spectacles.html">Spectacles</a></li>
+        <li class="nav-item"><a class="nav-link" href="pratique.html">Pratiquer</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferences.html">Conférences</a></li>
+        <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+        <li class="nav-item ms-2"><a class="nav-link nav-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="hero-eyebrow">Association MAR — Besançon</span>
+        <h1>On joue vos situations.<br><em>Vous changez</em> la fin.</h1>
+        <p class="hero-lead">Des spectacles de théâtre interactifs pour faire réagir, débattre et transformer les situations difficiles. <br>En entreprise, en institution, en famille.</p>
+        <div class="hero-quote">
+          « Nous sommes tous des acteurs : être un citoyen ce n'est pas vivre dans la société, c'est la changer. »
+          <br><small style="letter-spacing:1px; font-size:0.78rem; text-transform:uppercase;">— Augusto Boal</small>
+        </div>
+        <div class="d-flex gap-3 flex-wrap mt-3">
+          <a href="spectacles.html" class="btn-rouge">Découvrir nos spectacles</a>
+          <a href="contact.html" class="btn-ambre">Parlons de votre projet</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/spectacles/scene-01.jpg"
+             alt="Spectacle MAR" class="hero-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARROUSEL PHOTOS -->
+<div id="carouselMAR" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselMAR" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselMAR" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselMAR" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#carouselMAR" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#carouselMAR" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#carouselMAR" data-bs-slide-to="5"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active"><img src="images/spectacles/scene-02.jpg" alt="MAR en action"></div>
+    <div class="carousel-item"><img src="images/spectacles/scene-03.jpg" alt="Atelier MAR"></div>
+    <div class="carousel-item"><img src="images/spectacles/scene-04.jpg" alt="Spectacle MAR"></div>
+    <div class="carousel-item"><img src="images/spectacles/scene-05.jpg" alt="Théâtre forum"></div>
+    <div class="carousel-item"><img src="images/spectacles/scene-06.jpg" alt="MAR Besançon"></div>
+    <div class="carousel-item"><img src="images/spectacles/scene-07.jpg" alt="Association MAR"></div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselMAR" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselMAR" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- C'EST QUOI LE THÉÂTRE FORUM -->
+<section class="section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <span class="section-eyebrow">L'outil phare</span>
+        <h2 class="section-title">Le théâtre forum,<br><em>c'est quoi ?</em></h2>
+        <div class="section-divider"></div>
+        <p>Le théâtre forum se présente sous la forme de jeux de rôles et saynètes afin d'illustrer des situations problématiques et d'en explorer les éventuelles alternatives. Il offre un espace de réflexion et d'échanges pour innover et faire émerger collectivement des solutions.</p>
+        <p>Le public n'est pas spectateur passif : il devient <strong>spect'Acteur</strong> et peut entrer en scène pour transformer la situation !</p>
+        <a href="theatre-forum.html" class="btn-rouge" style="margin-top:1.5rem; display:inline-block;">En savoir plus</a>
+      </div>
+      <div class="col-lg-6">
+        <img src="images/spectacles/scene-08.jpg"
+             alt="Théâtre forum" style="width:100%; height:380px; object-fit:cover;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CE QUE NOUS PROPOSONS -->
+<section>
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-eyebrow">Nos prestations</span>
+      <h2 class="section-title">Que proposons-nous ?</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-card">
+          <div class="card-icon"><i class="bi bi-easel2"></i></div>
+          <h3>Spectacles</h3>
+          <p>Des spectacles clés en main sur de nombreuses thématiques, ou sur mesure à partir de vos situations et besoins. Plus d'une vingtaine de créations depuis 2023.</p>
+          <a href="spectacles.html" class="btn-rouge" style="display:inline-block; margin-top:1.5rem;">Découvrir</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <div class="card-icon"><i class="bi bi-people"></i></div>
+          <h3>Pratiquer</h3>
+          <p>Ateliers découverte, création de spectacles, ateliers mensuels, formation de formateurs. Pour tout public, de 5 à 99 ans, aucune expérience requise.</p>
+          <a href="pratique.html" class="btn-rouge" style="display:inline-block; margin-top:1.5rem;">Découvrir</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <div class="card-icon"><i class="bi bi-mic"></i></div>
+          <h3>Conférences & Séminaires</h3>
+          <p>Conférences forum, conférences théâtralisées et animations décalées de séminaires. Renforcez vos événements avec l'approche théâtrale.</p>
+          <a href="conferences.html" class="btn-rouge" style="display:inline-block; margin-top:1.5rem;">Découvrir</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section class="temoignages-section">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="section-eyebrow">Ils nous font confiance</span>
+      <h2 class="section-title">Ce qu'ils <em>en disent</em></h2>
+    </div>
+
+    <div id="carouselTemoignages" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+              <p class="temoignage-quote">
+                « J'ai pu assister à différents ateliers et également à un stage auprès de l'association MAR. Le théâtre forum est une approche formidable qui permet d'ouvrir son esprit sur différentes manières de sortir de nos oppressions… menée avec punch, bienveillance et professionnalisme par Laure Faget. Je recommande vraiment. »
+              </p>
+              <div class="temoignage-auteur mt-4">
+                <div style="width:32px; height:1px; background:var(--ambre-doux); margin:0 auto 1rem;"></div>
+                <strong>Isabelle</strong><br>
+                <span>Participante</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+              <p class="temoignage-quote">
+                « Le concept, clairement innovant, redonne un vrai coup de frais à des thématiques parfois difficiles à faire vivre. L'intervention est dynamique, accessible et très engageante : grâce à la participation du public, on ne reste pas spectateur, on devient acteur. Laure Faget sait mettre en confiance, et son équipe crée un cadre sécurisant et bienveillant. C'est là toute la force du théâtre forum : redonner du sens. »
+              </p>
+              <div class="temoignage-auteur mt-4">
+                <div style="width:32px; height:1px; background:var(--ambre-doux); margin:0 auto 1rem;"></div>
+                <strong>Simon</strong><br>
+                <span>Chef de service éducatif, secteur médico-social</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+              <p class="temoignage-quote">
+                « Je suis allé voir un théâtre forum et j'ai aimé ce moment. Il y a eu du rire, du partage et de la convivialité. La thématique abordée donnait vraiment envie de réagir et d'agir. Le concept est très intéressant car on a la possibilité de se rendre sur scène pour trouver des alternatives. Et Laure a dirigé ce moment d'une main de maître, tout en bonne humeur. »
+              </p>
+              <div class="temoignage-auteur mt-4">
+                <div style="width:32px; height:1px; background:var(--ambre-doux); margin:0 auto 1rem;"></div>
+                <strong>Germain</strong><br>
+                <span>Spect'Acteur d'un théâtre forum</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+              <p class="temoignage-quote">
+                « Nous avons sollicité MAR pour un cycle de 10 ateliers dans notre entreprise. Les deux intervenantes Serpil et Laure ont mené ce cycle avec brio. Elles ont su mettre à l'aise les personnes les moins réceptives au théâtre. Je recommande cette approche qui sort de l'ordinaire et permet d'aborder des sujets complexes avec profondeur tout en s'amusant. »
+              </p>
+              <div class="temoignage-auteur mt-4">
+                <div style="width:32px; height:1px; background:var(--ambre-doux); margin:0 auto 1rem;"></div>
+                <strong>Séverine</strong><br>
+                <span>Dirigeante d'entreprise</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Navigation : flèches + points -->
+      <div class="d-flex justify-content-center align-items-center gap-3 mt-4">
+        <button class="temo-nav" type="button" data-bs-target="#carouselTemoignages" data-bs-slide="prev">
+          <i class="bi bi-arrow-left"></i>
+        </button>
+        <div class="d-flex gap-2">
+          <button class="temo-dot" style="background:var(--ambre);" data-bs-target="#carouselTemoignages" data-bs-slide-to="0"></button>
+          <button class="temo-dot" style="background:var(--gris-clair);" data-bs-target="#carouselTemoignages" data-bs-slide-to="1"></button>
+          <button class="temo-dot" style="background:var(--gris-clair);" data-bs-target="#carouselTemoignages" data-bs-slide-to="2"></button>
+          <button class="temo-dot" style="background:var(--gris-clair);" data-bs-target="#carouselTemoignages" data-bs-slide-to="3"></button>
+        </div>
+        <button class="temo-nav" type="button" data-bs-target="#carouselTemoignages" data-bs-slide="next">
+          <i class="bi bi-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUAGE DE MOTS ANIMÉ -->
+<section>
+  <div class="container text-center">
+    <span class="section-eyebrow">Nos valeurs</span>
+    <h2 class="section-title">Ce qui <em>nous anime</em> <span style="font-size:1rem; color:var(--gris); font-family:'DM Sans',sans-serif; font-style:normal;">(À améliorer)</span></h2>
+    <div class="section-divider mx-auto"></div>
+    <div class="nuage-cloud" id="nuageCloud"></div>
+  </div>
+</section>
+
+<style>
+.nuage-cloud{position:relative;width:100%;min-height:340px;margin-top:2rem;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:.6rem;padding:1.5rem 0}
+.nuage-word{display:inline-block;cursor:pointer;text-decoration:none;font-family:'DM Sans',sans-serif;font-weight:600;letter-spacing:.5px;text-transform:uppercase;border-radius:4px;transition:transform .5s cubic-bezier(.25,.8,.25,1),box-shadow .5s ease,background .4s ease,color .4s ease;will-change:transform}
+.nuage-word:hover{transform:scale(1.08) translateY(-4px)!important;box-shadow:0 10px 28px rgba(0,0,0,.13)!important}
+
+/* Tailles — padding adapté à chaque niveau */
+.nuage-s1{font-size:.68rem;padding:.4rem .7rem}
+.nuage-s2{font-size:.82rem;padding:.45rem .85rem}
+.nuage-s3{font-size:.95rem;padding:.5rem 1rem}
+.nuage-s4{font-size:1.1rem;padding:.55rem 1.1rem}
+.nuage-s5{font-size:1.3rem;padding:.6rem 1.2rem}
+
+/* Variantes — toutes fond coloré + texte blanc */
+.nuage-v-rouge{background:#C8392A;color:#fff;box-shadow:0 3px 10px rgba(200,57,42,.25)}
+.nuage-v-rouge:hover{background:#a82d22}
+.nuage-v-ambre{background:#D4922A;color:#fff;box-shadow:0 3px 10px rgba(212,146,42,.25)}
+.nuage-v-ambre:hover{background:#b87a22}
+.nuage-v-dark{background:#2C2A28;color:#fff;box-shadow:0 3px 10px rgba(0,0,0,.2)}
+.nuage-v-dark:hover{background:#1a1918}
+.nuage-v-terracotta{background:#B85C38;color:#fff;box-shadow:0 3px 10px rgba(184,92,56,.22)}
+.nuage-v-terracotta:hover{background:#9d4d2f}
+.nuage-v-ocre{background:#C4892A;color:#fff;box-shadow:0 3px 10px rgba(196,137,42,.22)}
+.nuage-v-ocre:hover{background:#a97424}
+.nuage-v-ardoise{background:#5A5754;color:#fff;box-shadow:0 3px 10px rgba(90,87,84,.2)}
+.nuage-v-ardoise:hover{background:#484644}
+
+@keyframes nuageFloat1{0%,100%{transform:translateY(0) rotate(var(--rot))}50%{transform:translateY(-7px) rotate(var(--rot))}}
+@keyframes nuageFloat2{0%,100%{transform:translateY(0) rotate(var(--rot))}50%{transform:translateY(6px) rotate(var(--rot))}}
+@keyframes nuageFloat3{0%,100%{transform:translateX(0) rotate(var(--rot))}50%{transform:translateX(6px) rotate(var(--rot))}}
+@media(max-width:768px){.nuage-cloud{min-height:240px;gap:.4rem}.nuage-s4{font-size:1rem;padding:.45rem .9rem}.nuage-s5{font-size:1.1rem;padding:.5rem 1rem}}
+</style>
+
+<script>
+(function(){
+  var words=[
+    {t:'Humanisme',s:5},{t:'Équité',s:3},{t:'Collaboration',s:4},{t:'Changement',s:3},
+    {t:'Pouvoir d\'agir',s:5},{t:'Citoyenneté',s:2},{t:'Co-construction',s:3},{t:'Intelligence collective',s:4},
+    {t:'Ouverture',s:2},{t:'Respect',s:3},{t:'Transformation',s:5},{t:'Écoute',s:2},
+    {t:'Liberté',s:4},{t:'Empathie',s:3},{t:'Bienveillance',s:4},{t:'Théâtre',s:5},
+    {t:'Forum',s:4},{t:'Jeux',s:2},{t:'Scène',s:3},{t:'Dialogue',s:4},
+    {t:'Engagement',s:3},{t:'Créer',s:2},{t:'Expérimenter',s:3},{t:'Surprendre',s:2}
+  ];
+  var variants=['nuage-v-rouge','nuage-v-ambre','nuage-v-dark','nuage-v-terracotta','nuage-v-ocre','nuage-v-ardoise'];
+  var anims=['nuageFloat1','nuageFloat2','nuageFloat3'];
+  var container=document.getElementById('nuageCloud');
+  // Shuffle
+  for(var i=words.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var tmp=words[i];words[i]=words[j];words[j]=tmp}
+  words.forEach(function(w,idx){
+    var a=document.createElement('a');
+    a.href='spectacles.html';
+    a.className='nuage-word nuage-s'+w.s+' '+variants[idx%variants.length];
+    a.textContent=w.t;
+    var rot=(Math.random()*24-12).toFixed(1);
+    a.style.setProperty('--rot',rot+'deg');
+    a.style.transform='rotate('+rot+'deg)';
+    var anim=anims[Math.floor(Math.random()*3)];
+    var dur=(3+Math.random()*4).toFixed(1);
+    var delay=(Math.random()*3).toFixed(1);
+    a.style.animation=anim+' '+dur+'s ease-in-out '+delay+'s infinite';
+    container.appendChild(a);
+  });
+})();
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">M<em>A</em>R</div>
+        <p class="mt-3" style="font-size:0.88rem; line-height:1.7;">Méthodes Alternatives de Régulation.<br>Promouvoir le dialogue social à travers le théâtre forum.</p>
+        <div class="mt-3">
+          <a href="https://www.facebook.com/profile.php?id=61551824633043" class="social-link" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+          <li><a href="theatre-forum.html">Le théâtre forum</a></li>
+          <li><a href="spectacles.html">Spectacles</a></li>
+          <li><a href="pratique.html">Pratiquer</a></li>
+          <li><a href="conferences.html">Conférences & séminaires</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Contact</h5>
+        <ul>
+          <li style="color:#9A9895;"><i class="bi bi-geo-alt me-2" style="color:var(--ambre-doux)"></i>1 rue de l'école, 25000 Besançon</li>
+          <li><i class="bi bi-envelope me-2" style="color:var(--ambre-doux)"></i><a href="mailto:contact@assomar.fr">contact@assomar.fr</a></li>
+          <li><i class="bi bi-telephone me-2" style="color:var(--ambre-doux)"></i><a href="tel:0769181710">07 69 18 17 10</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Association MAR — Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;opacity:.7;">Mentions légales</a> &nbsp;|&nbsp; <a href="mentions-legales.html#confidentialite" style="color:inherit;opacity:.7;">Confidentialité</a></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/cookies.js" defer></script>
+</body>
+</html>

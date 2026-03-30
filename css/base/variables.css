@@ -1,0 +1,25 @@
+/* =============================================
+   VARIABLES — Palette & tokens de design
+   Association MAR
+   ============================================= */
+
+:root {
+  /* Couleurs principales */
+  --rouge:        #C8392A;
+  --rouge-doux:   #E8685A;
+  --rouge-clair:  #FAF0EE;
+
+  /* Ambre / secondaire */
+  --ambre:        #D4922A;
+  --ambre-doux:   #E8B86A;
+  --ambre-clair:  #FDF5E8;
+
+  /* Neutres */
+  --creme:        #FAF8F5;
+  --creme-fonce:  #F0EBE3;
+  --dark:         #1E1C1A;
+  --gris-fonce:   #3D3A38;
+  --gris:         #7A7572;
+  --gris-clair:   #C8C4C0;
+  --blanc:        #FFFFFF;
+}

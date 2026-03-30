@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spectacles — Association MAR</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand logo-brand" href="index.html">
+      <img src="images/logo-mar.png" alt="Association MAR" class="logo-img" onload="this.style.display='block';this.nextElementSibling.style.display='none'" onerror="this.style.display='none'">
+      <span class="logo-texte">MAR</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link" href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+        <li class="nav-item"><a class="nav-link" href="theatre-forum.html">Le théâtre forum</a></li>
+        <li class="nav-item"><a class="nav-link active" href="spectacles.html">Spectacles</a></li>
+        <li class="nav-item"><a class="nav-link" href="pratique.html">Pratiquer</a></li>
+        <li class="nav-item"><a class="nav-link" href="conferences.html">Conférences</a></li>
+        <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+        <li class="nav-item"><a class="nav-link nav-cta" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- INTRO + 2 OPTIONS -->
+<section style="padding-bottom:2.5rem;">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2 class="section-title">Des spectacles qui <em>font réagir</em></h2>
+        <div class="section-divider"></div>
+        <p class="lead">Vous souhaitez faire réagir sur des sujets d'actualité ? Aborder une thématique spécifique avec vos équipes ? Animer un séminaire de façon originale ?</p>
+        <p>Depuis sa création en 2023, l'Association MAR a créé une <strong>vingtaine de spectacles</strong> inspirés d'histoires réelles, d'oppressions vécues et d'anecdotes partagées par différents publics.</p>
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <img src="images/spectacles/scene-12.jpg"
+             alt="Spectacle MAR" class="img-fluid w-100" style="max-height:340px;object-fit:cover;">
+      </div>
+    </div>
+
+    <!-- 2 OPTIONS -->
+    <div class="row g-3 mt-4">
+      <div class="col-md-6">
+        <div class="text-center p-3" style="background:var(--creme-fonce); border-top:3px solid var(--ambre);">
+          <span style="font-size:0.7rem; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--ambre);">Sur mesure</span>
+          <p style="font-size:0.85rem; color:var(--gris); margin:0.3rem 0 0.8rem;">Un spectacle construit à partir de vos situations et besoins.</p>
+          <a href="contact.html" class="btn-ambre" style="font-size:0.78rem; padding:0.35rem 1rem;">Nous contacter</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="text-center p-3" style="background:var(--creme-fonce); border-top:3px solid var(--rouge);">
+          <span style="font-size:0.7rem; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--rouge);">Clé en main</span>
+          <p style="font-size:0.85rem; color:var(--gris); margin:0.3rem 0 0.8rem;">Choisissez parmi nos 17 créations inspirées d'histoires réelles.</p>
+          <a href="#repertoire" class="btn-rouge" style="font-size:0.78rem; padding:0.35rem 1rem;">Voir le répertoire</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RÉPERTOIRE -->
+
+<section id="repertoire" style="padding-top:2rem;">
+  <div class="container">
+    <div class="text-center mb-4">
+      <span class="section-eyebrow">Catalogue</span>
+      <h2 class="section-title">Notre <em>répertoire</em></h2>
+      <div class="section-divider mx-auto"></div>
+      <p style="color:var(--gris); max-width:600px; margin:0 auto;">17 spectacles créés depuis 2023 — cliquez sur une carte pour lire le pitch complet</p>
+    </div>
+
+    <!-- Filtres -->
+    <div class="d-flex flex-wrap gap-2 justify-content-center mb-5">
+      <button class="filtre-btn active" data-filtre="tous">Tous (17)</button>
+      <button class="filtre-btn" data-filtre="adultes">Adultes</button>
+      <button class="filtre-btn" data-filtre="entreprise">Entreprise & Pro</button>
+      <button class="filtre-btn" data-filtre="famille">Famille</button>
+      <button class="filtre-btn" data-filtre="jeunesse">Jeunesse</button>
+    </div>
+
+    <div class="row g-3" id="grilleSpectacles">
+
+      <!-- 1 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="adultes">
+        <div class="pitch-card" data-bs-toggle="modal" data-bs-target="#m1">
+          <span class="pitch-cat">Adultes</span>
+          <h3 class="pitch-titre">Sous silence</h3>
+          <p class="pitch-theme">Les non-dits et tabous</p>
+          <p class="pitch-resume">Le spectacle met en évidence les disparités des relations intra familiales ou amicales et les difficultés à sortir du silence.</p>
+          <div class="pitch-infos"><span>7 scénarios</span><span>1h30</span><span>Adultes uniquement</span></div>
+          <span class="pitch-lire">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="entreprise">
+        <div class="pitch-card entreprise" data-bs-toggle="modal" data-bs-target="#m2">
+          <span class="pitch-cat entreprise">Entreprise & Pro</span>
+          <h3 class="pitch-titre">Entre idées reçues et vécus partagés</h3>
+          <p class="pitch-theme">Communication dans le monde du travail</p>
+          <p class="pitch-resume">Ce spectacle aborde des enjeux de communication dans la sphère professionnelle : malentendus, interprétations, rumeurs, conflits intergénérationnels.</p>
+          <div class="pitch-infos"><span>4 scénarios</span><span>1h30</span><span>Adultes en entreprise</span></div>
+          <span class="pitch-lire entreprise">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="famille">
+        <div class="pitch-card famille" data-bs-toggle="modal" data-bs-target="#m3">
+          <span class="pitch-cat famille">Famille</span>
+          <h3 class="pitch-titre">Ma famille est une ordure</h3>
+          <p class="pitch-theme">Le poids des relations et lignées familiales</p>
+          <p class="pitch-resume">Ce spectacle traite de violence ordinaire et du poids que la famille peut avoir sur les choix de vie.</p>
+          <div class="pitch-infos"><span>3 scénarios</span><span>1h30</span><span>Tout public</span></div>
+          <span class="pitch-lire famille">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="adultes">
+        <div class="pitch-card" data-bs-toggle="modal" data-bs-target="#m4">
+          <span class="pitch-cat">Adultes</span>
+          <h3 class="pitch-titre">Histoires de couples</h3>
+          <p class="pitch-theme">Souffrances vécues au sein de la relation conjugale</p>
+          <p class="pitch-resume">Ce spectacle met en exergue des situations quotidiennes et problématiques de vie de couple.</p>
+          <div class="pitch-infos"><span>3 scénarios</span><span>1h30</span><span>Adultes</span></div>
+          <span class="pitch-lire">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="entreprise">
+        <div class="pitch-card entreprise" data-bs-toggle="modal" data-bs-target="#m5">
+          <span class="pitch-cat entreprise">Entreprise & Pro</span>
+          <h3 class="pitch-titre">Le travail d'équipe, c'est facile ?</h3>
+          <p class="pitch-theme">Les dynamiques de groupe en équipe</p>
+          <p class="pitch-resume">Spectacle sur les défis du travail en équipe : rumeurs, tensions, désaccords et conflits de valeurs professionnelles.</p>
+          <div class="pitch-infos"><span>3 scénarios</span><span>1h30</span><span>Professionnels</span></div>
+          <span class="pitch-lire entreprise">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="adultes">
+        <div class="pitch-card" data-bs-toggle="modal" data-bs-target="#m6">
+          <span class="pitch-cat">Adultes</span>
+          <h3 class="pitch-titre">Oser s'affirmer au quotidien</h3>
+          <p class="pitch-theme">L'affirmation de soi dans différents contextes</p>
+          <p class="pitch-resume">Ce spectacle traite de la complexité des relations humaines et de la difficulté de s'affirmer dans la sphère familiale, amicale ou professionnelle.</p>
+          <div class="pitch-infos"><span>3 scénarios</span><span>1h30</span><span>Adultes</span></div>
+          <span class="pitch-lire">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="jeunesse">
+        <div class="pitch-card jeunesse" data-bs-toggle="modal" data-bs-target="#m7">
+          <span class="pitch-cat jeunesse">Jeunesse</span>
+          <h3 class="pitch-titre">La santé, c'est dans ta tête ?</h3>
+          <p class="pitch-theme">Santé mentale des étudiant·es</p>
+          <p class="pitch-resume">Le spectacle traite de plusieurs enjeux autour de la santé mentale des étudiants : souffrance psychique, mal-être, soutien entre pairs.</p>
+          <div class="pitch-infos"><span>4 scénarios</span><span>1h30</span><span>Étudiant·es</span></div>
+          <span class="pitch-lire jeunesse">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="adultes">
+        <div class="pitch-card" data-bs-toggle="modal" data-bs-target="#m8">
+          <span class="pitch-cat">Adultes</span>
+          <h3 class="pitch-titre">Tu sais mieux que moi ?</h3>
+          <p class="pitch-theme">Conflits d'opinions</p>
+          <p class="pitch-resume">Ce spectacle traite de la liberté personnelle et de la difficulté à dialoguer quand deux opinions s'opposent.</p>
+          <div class="pitch-infos"><span>3 scénarios</span><span>1h30</span><span>Adultes</span></div>
+          <span class="pitch-lire">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="jeunesse">
+        <div class="pitch-card jeunesse" data-bs-toggle="modal" data-bs-target="#m9">
+          <span class="pitch-cat jeunesse">Jeunesse</span>
+          <h3 class="pitch-titre">Enfants, adultes, déconditionnons-nous !</h3>
+          <p class="pitch-theme">Quand les autres dictent nos choix</p>
+          <p class="pitch-resume">Le spectacle montre que l'éducation familiale et les croyances nous conditionnent tout au long de notre vie.</p>
+          <div class="pitch-infos"><span>2 scénarios</span><span>1h30</span><span>Adolescents & adultes</span></div>
+          <span class="pitch-lire jeunesse">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="entreprise">
+        <div class="pitch-card entreprise" data-bs-toggle="modal" data-bs-target="#m10">
+          <span class="pitch-cat entreprise">Conférence forum</span>
+          <h3 class="pitch-titre">L'auto-détermination des personnes vulnérables</h3>
+          <p class="pitch-theme">Handicap & développement du pouvoir d'agir</p>
+          <p class="pitch-resume">Conférence forum sur les pratiques essentielles pour accompagner l'auto-détermination des personnes en situation de handicap.</p>
+          <div class="pitch-infos"><span>4 scénarios</span><span>2h30</span><span>Professionnels médico-social</span></div>
+          <span class="pitch-lire entreprise">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="entreprise">
+        <div class="pitch-card entreprise" data-bs-toggle="modal" data-bs-target="#m11">
+          <span class="pitch-cat entreprise">Entreprise & Pro</span>
+          <h3 class="pitch-titre">La médiation sociale, un jeu d'enfant ?</h3>
+          <p class="pitch-theme">Situations concrètes de médiation sociale</p>
+          <p class="pitch-resume">Ce spectacle évoque les nombreux défis auxquels sont confrontés les médiateurs sociaux sur le terrain.</p>
+          <div class="pitch-infos"><span>4 scénarios</span><span>1h30</span><span>Médiateurs & employeurs</span></div>
+          <span class="pitch-lire entreprise">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="adultes">
+        <div class="pitch-card" data-bs-toggle="modal" data-bs-target="#m12">
+          <span class="pitch-cat">Adultes</span>
+          <h3 class="pitch-titre">Violences faites aux femmes</h3>
+          <p class="pitch-theme">Les violences à l'égard des femmes</p>
+          <p class="pitch-resume">Le spectacle montre plusieurs types de violences allant crescendo, dans différentes sphères, à la fois publiques et privées.</p>
+          <div class="pitch-infos"><span>4 scénarios</span><span>1h30</span><span>Adultes & adolescent·es</span></div>
+          <span class="pitch-lire">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 13 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="adultes">
+        <div class="pitch-card" data-bs-toggle="modal" data-bs-target="#m13">
+          <span class="pitch-cat">Adultes</span>
+          <h3 class="pitch-titre">Poing levé ou bras croisés</h3>
+          <p class="pitch-theme">Notre rapport à l'écologie et à la cause animale</p>
+          <p class="pitch-resume">Ce spectacle met en lumière des amis qui se questionnent sur leur rapport au monde et sur leur pouvoir d'agir.</p>
+          <div class="pitch-infos"><span>3 scénarios</span><span>1h30</span><span>Adultes</span></div>
+          <span class="pitch-lire">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 14 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="jeunesse">
+        <div class="pitch-card jeunesse" data-bs-toggle="modal" data-bs-target="#m14">
+          <span class="pitch-cat jeunesse">Jeunesse</span>
+          <h3 class="pitch-titre">C'est injuste mais ça peut changer !</h3>
+          <p class="pitch-theme">Lutte contre le harcèlement, retrouver le pouvoir d'agir</p>
+          <p class="pitch-resume">Comment dénoncer les injustices et mettre fin au harcèlement scolaire ? Comment se défendre quand on en est victime ?</p>
+          <div class="pitch-infos"><span>4 scènes</span><span>1h30</span><span>Enfants</span></div>
+          <span class="pitch-lire jeunesse">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 15 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="famille">
+        <div class="pitch-card famille" data-bs-toggle="modal" data-bs-target="#m15">
+          <span class="pitch-cat famille">Famille</span>
+          <h3 class="pitch-titre">L'éducation ça s'estime !</h3>
+          <p class="pitch-theme">Les modèles éducatifs</p>
+          <p class="pitch-resume">Comment ajuster l'éducation de son enfant pour générer de l'estime de soi plutôt qu'une dévalorisation ?</p>
+          <div class="pitch-infos"><span>2 scénarios</span><span>1h30</span><span>Parents & adolescents</span></div>
+          <span class="pitch-lire famille">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 16 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="entreprise">
+        <div class="pitch-card entreprise" data-bs-toggle="modal" data-bs-target="#m16">
+          <span class="pitch-cat entreprise">Entreprise & Pro</span>
+          <h3 class="pitch-titre">Burn out !</h3>
+          <p class="pitch-theme">Le burn out professionnel</p>
+          <p class="pitch-resume">Ce spectacle illustre la difficulté d'équilibrer vie professionnelle et vie personnelle ainsi que le manque d'écoute dans les relations.</p>
+          <div class="pitch-infos"><span>2 scénarios</span><span>1h30</span><span>Adultes</span></div>
+          <span class="pitch-lire entreprise">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+      <!-- 17 -->
+      <div class="col-md-6 col-lg-4 spectacle-item" data-cat="adultes">
+        <div class="pitch-card" data-bs-toggle="modal" data-bs-target="#m17">
+          <span class="pitch-cat">Adultes</span>
+          <h3 class="pitch-titre">C'est mon choix !</h3>
+          <p class="pitch-theme">L'acceptation de modes de vie différents</p>
+          <p class="pitch-resume">Ce spectacle traite des choix de vie : orientation sexuelle, mode de vie, équilibre au sein du couple.</p>
+          <div class="pitch-infos"><span>2 scénarios</span><span>1h30</span><span>Adultes</span></div>
+          <span class="pitch-lire">Lire le pitch <i class="bi bi-arrow-right-short"></i></span>
+        </div>
+      </div>
+
+    </div>
+    <div class="text-center mt-5">
+      <p style="color:var(--gris); font-size:0.9rem;">Vous ne trouvez pas votre thématique ?</p>
+      <a href="contact.html" class="btn-ambre" style="display:inline-block; margin-top:0.5rem;">Créer un spectacle sur mesure</a>
+    </div>
+  </div>
+</section>
+
+<!-- MODALS PITCHS -->
+<!-- M1 -->
+<div class="modal fade" id="m1" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><div><span class="pitch-cat">Adultes</span><h5 class="modal-title-main">Sous silence</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M2 -->
+<div class="modal fade" id="m2" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header entreprise"><div><span class="pitch-cat entreprise">Entreprise & Pro</span><h5 class="modal-title-main">Entre idées reçues et vécus partagés : déconstruire pour mieux coopérer</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M3 -->
+<div class="modal fade" id="m3" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header famille"><div><span class="pitch-cat famille">Famille</span><h5 class="modal-title-main">Ma famille est une ordure</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M4 -->
+<div class="modal fade" id="m4" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><div><span class="pitch-cat">Adultes</span><h5 class="modal-title-main">Histoires de couples</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M5 -->
+<div class="modal fade" id="m5" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header entreprise"><div><span class="pitch-cat entreprise">Entreprise & Pro</span><h5 class="modal-title-main">Le travail d'équipe, c'est facile ?</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M6 -->
+<div class="modal fade" id="m6" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><div><span class="pitch-cat">Adultes</span><h5 class="modal-title-main">Oser s'affirmer au quotidien</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M7 -->
+<div class="modal fade" id="m7" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header jeunesse"><div><span class="pitch-cat jeunesse">Jeunesse</span><h5 class="modal-title-main">La santé, c'est dans ta tête ?</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M8 -->
+<div class="modal fade" id="m8" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><div><span class="pitch-cat">Adultes</span><h5 class="modal-title-main">Tu sais mieux que moi ?</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M9 -->
+<div class="modal fade" id="m9" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header jeunesse"><div><span class="pitch-cat jeunesse">Jeunesse</span><h5 class="modal-title-main">Enfants, adultes, déconditionnons-nous !</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M10 -->
+<div class="modal fade" id="m10" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header entreprise"><div><span class="pitch-cat entreprise">Conférence forum</span><h5 class="modal-title-main">L'auto-détermination des personnes vulnérables</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M11 -->
+<div class="modal fade" id="m11" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header entreprise"><div><span class="pitch-cat entreprise">Entreprise & Pro</span><h5 class="modal-title-main">La médiation sociale, un jeu d'enfant ?</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M12 -->
+<div class="modal fade" id="m12" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><div><span class="pitch-cat">Adultes</span><h5 class="modal-title-main">Violences faites aux femmes</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M13 -->
+<div class="modal fade" id="m13" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><div><span class="pitch-cat">Adultes</span><h5 class="modal-title-main">Poing levé ou bras croisés : quel pouvoir d'agir avons-nous ?</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M14 -->
+<div class="modal fade" id="m14" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header jeunesse"><div><span class="pitch-cat jeunesse">Jeunesse</span><h5 class="modal-title-main">C'est injuste mais ça peut changer !</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M15 -->
+<div class="modal fade" id="m15" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header famille"><div><span class="pitch-cat famille">Famille</span><h5 class="modal-title-main">L'éducation ça s'estime !</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M16 -->
+<div class="modal fade" id="m16" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header entreprise"><div><span class="pitch-cat entreprise">Entreprise & Pro</span><h5 class="modal-title-main">Burn out !</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- M17 -->
+<div class="modal fade" id="m17" tabindex="-1"><div class="modal-dialog modal-lg modal-dialog-scrollable"><div class="modal-content">
+  <div class="modal-header"><div><span class="pitch-cat">Adultes</span><h5 class="modal-title-main">C'est mon choix !</h5></div><button class="btn-close" data-bs-dismiss="modal"></button></div>
+  <div class="modal-body p-4" style="text-align:center; padding:3rem 2rem !important;">
+    <p style="color:var(--gris); font-style:italic;">Contenu en construction</p>
+  </div>
+  <div class="modal-footer"><button class="btn-outline" data-bs-dismiss="modal" style="display:inline-block;">Fermer</button></div>
+</div></div></div>
+
+<!-- PHOTOS -->
+<section class="section-alt">
+  <div class="container">
+    <h2 class="section-title text-center">MAR en <em>action</em></h2>
+    <div class="section-divider mx-auto"></div>
+    <div class="row g-2 mt-2">
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-13.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-09.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-10.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-14.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-15.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-16.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section style="background:var(--dark); color:#fff; text-align:center; padding:3rem 0;">
+  <div class="container">
+    <h2 style="color:#fff;">Un projet ? Une thématique à explorer ?</h2>
+    <p class="mt-2" style="color:rgba(255,255,255,0.8);">Contactez-nous pour construire ensemble un spectacle adapté à vos besoins.</p>
+    <a href="contact.html" class="btn-ambre">Nous contacter</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-lg-4">
+        <div class="footer-brand">M<em>A</em>R</div>
+        <p class="mt-2" style="font-size:0.9rem;">Méthodes Alternatives de Régulation</p>
+        <div class="mt-3">
+          <a href="https://www.facebook.com/profile.php?id=61551824633043" class="social-link" target="_blank"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h5>Navigation</h5>
+        <ul>
+          <li><a href="qui-sommes-nous.html">Qui sommes-nous</a></li>
+          <li><a href="theatre-forum.html">Le théâtre forum</a></li>
+          <li><a href="spectacles.html">Spectacles</a></li>
+          <li><a href="pratique.html">Pratiquer</a></li>
+          <li><a href="conferences.html">Conférences & séminaires</a></li>
+          <li><a href="actualites.html">Actualités</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h5>Contact</h5>
+        <ul>
+          <li><i class="bi bi-geo-alt-fill me-2" style="color:var(--ambre-doux)"></i>1 rue de l'école, 25000 Besançon</li>
+          <li><i class="bi bi-envelope-fill me-2" style="color:var(--ambre-doux)"></i><a href="mailto:contact@assomar.fr">contact@assomar.fr</a></li>
+          <li><i class="bi bi-telephone-fill me-2" style="color:var(--ambre-doux)"></i><a href="tel:0769181710">07 69 18 17 10</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">&copy; 2025 Association MAR — Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;opacity:.7;">Mentions légales</a> &nbsp;|&nbsp; <a href="mentions-legales.html#confidentialite" style="color:inherit;opacity:.7;">Confidentialité</a></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/cookies.js" defer></script>
+<script>
+  // Filtre du catalogue de spectacles
+  const filtresBtns = document.querySelectorAll('.filtre-btn');
+  const spectacleItems = document.querySelectorAll('.spectacle-item');
+
+  filtresBtns.forEach(btn => {
+    btn.addEventListener('click', function () {
+      // Activer le bouton cliqué
+      filtresBtns.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+
+      const filtre = this.dataset.filtre;
+
+      spectacleItems.forEach(item => {
+        if (filtre === 'tous' || item.dataset.cat === filtre) {
+          item.style.display = '';
+          item.style.animation = 'fadeIn .3s ease';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+
+      // Mettre à jour le compteur
+      const visibles = [...spectacleItems].filter(i => i.style.display !== 'none').length;
+      const counter = document.getElementById('spectacle-count');
+      if (counter) counter.textContent = visibles;
+    });
+  });
+</script>
+</body>
+</html>

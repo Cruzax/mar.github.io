@@ -1,0 +1,16 @@
+/* =============================================
+   LAYOUT — Sections de page
+   ============================================= */
+
+section {
+  padding: 5.5rem 0;
+}
+
+/* Première section directement après la navbar : moins d'espace */
+nav + section {
+  padding-top: 3rem;
+}
+
+.section-alt {
+  background: var(--creme-fonce);
+}

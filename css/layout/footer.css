@@ -1,0 +1,63 @@
+/* =============================================
+   LAYOUT — Pied de page
+   ============================================= */
+
+footer {
+  background: var(--dark);
+  color: #9A9895;
+  padding: 4rem 0 2rem;
+}
+
+footer h5 {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--blanc);
+  margin-bottom: 1.25rem;
+}
+
+footer a { color: #9A9895; }
+footer a:hover { color: var(--ambre-doux); text-decoration: none; }
+
+footer ul { list-style: none; padding: 0; }
+footer ul li { margin-bottom: 0.5rem; font-size: 0.88rem; }
+
+.footer-brand {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: var(--blanc);
+  letter-spacing: 4px;
+}
+.footer-brand em {
+  font-style: italic;
+  color: var(--ambre-doux);
+}
+
+.footer-bottom {
+  border-top: 1px solid #2E2C2A;
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  font-size: 0.78rem;
+  text-align: center;
+  color: #5A5855;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #2E2C2A;
+  color: #9A9895 !important;
+  margin-right: 0.4rem;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+  text-decoration: none !important;
+}
+.social-link:hover {
+  border-color: var(--ambre-doux);
+  color: var(--ambre-doux) !important;
+}

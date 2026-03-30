@@ -1,0 +1,48 @@
+/* =============================================
+   Association MAR — Feuille de style principale
+   Importe tous les modules CSS dans l'ordre.
+   =============================================
+
+   STRUCTURE :
+     base/
+       variables.css    — palette & tokens de design
+       typographie.css  — styles fondamentaux, titres, texte, liens
+     layout/
+       sections.css     — padding de sections, .section-alt
+       navbar.css       — barre de navigation
+       hero.css         — bannière hero
+       footer.css       — pied de page
+     composants/
+       boutons.css      — .btn-rouge, .btn-ambre, .btn-outline
+       cards.css        — service-card, membre-card, actu-card
+       carousel.css     — carousel photos & témoignages
+       citation.css     — bandeau citation & nuage de mots
+       accordeon.css    — accordéon (page Pratiquer)
+       formulaire.css   — formulaire & contact
+       catalogue.css    — catalogue spectacles (filtres, pitch cards, modals)
+     responsive.css     — media queries mobile & tablette
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* Base */
+@import 'base/variables.css';
+@import 'base/typographie.css';
+
+/* Layout */
+@import 'layout/sections.css';
+@import 'layout/navbar.css';
+@import 'layout/hero.css';
+@import 'layout/footer.css';
+
+/* Composants */
+@import 'composants/boutons.css';
+@import 'composants/cards.css';
+@import 'composants/carousel.css';
+@import 'composants/citation.css';
+@import 'composants/accordeon.css';
+@import 'composants/formulaire.css';
+@import 'composants/catalogue.css';
+
+/* Responsive */
+@import 'responsive.css';
