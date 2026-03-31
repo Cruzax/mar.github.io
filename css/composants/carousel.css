@@ -2,11 +2,16 @@
    COMPOSANT — Carousels (photos & témoignages)
    ============================================= */
 
-/* Carousel photos */
+/* Carousel photos (hors hero) */
 .carousel-item img {
   height: 520px;
   object-fit: cover;
   width: 100%;
+}
+
+/* Le hero gère ses propres images — ne pas écraser */
+.hero-carousel-wrap .carousel-item img {
+  height: 100% !important;
 }
 
 .carousel-control-prev,

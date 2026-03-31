@@ -1,4 +1,5 @@
 // Bannière de consentement cookies — Association MAR
+/*
 (function () {
   const COOKIE_KEY = 'mar_cookie_consent';
 

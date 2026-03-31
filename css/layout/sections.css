@@ -6,9 +6,21 @@ section {
   padding: 5.5rem 0;
 }
 
-/* Première section directement après la navbar : moins d'espace */
-nav + section {
-  padding-top: 3rem;
+/* Hero : aucun padding */
+.hero-carousel-wrap {
+  padding: 0;
+}
+
+/* Toutes les sections hors hero : passent par-dessus le carousel */
+section:not(.hero-carousel-wrap) {
+  position: relative;
+  z-index: 5;
+  background: var(--creme);
+}
+
+/* Première section après le hero : glisse par-dessus le carousel */
+.hero-carousel-wrap + section {
+  padding-top: 4.5rem;
 }
 
 .section-alt {

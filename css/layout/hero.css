@@ -1,54 +1,98 @@
 /* =============================================
-   LAYOUT — Section hero (bannière d'accueil)
+   LAYOUT — Hero carousel plein écran
    ============================================= */
 
-.hero {
-  background: var(--creme);
-  padding: 3.5rem 0;
-  border-bottom: 1px solid var(--creme-fonce);
+.hero-carousel-wrap {
+  position: sticky;
+  top: 0;
+  height: 92vh;
+  min-height: 540px;
+  overflow: hidden;
+  background: #141210;
+  z-index: 1;
+}
+
+.hero-carousel-wrap .carousel,
+.hero-carousel-wrap .carousel-inner {
+  height: 100%;
+}
+
+.hero-carousel-wrap .carousel-item {
+  height: 100%;
+}
+
+.hero-carousel-wrap .carousel-item img {
+  position: absolute !important;
+  inset: 0;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Overlay sombre dégradé gauche→droite */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(20, 18, 16, 0.75) 0%,
+    rgba(20, 18, 16, 0.45) 60%,
+    rgba(20, 18, 16, 0.15) 100%
+  );
+  z-index: 2;
+}
+
+/* Contenu centré verticalement */
+.hero-content-wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 3;
 }
 
 .hero-eyebrow {
+  display: block;
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--rouge);
+  color: var(--ambre);
   margin-bottom: 0.75rem;
 }
 
-.hero h1 {
-  font-size: 3.2rem;
-  color: var(--dark);
-  line-height: 1.1;
-  margin-bottom: 1rem;
-}
-.hero h1 em {
-  font-style: italic;
-  color: var(--rouge);
-}
-
-.hero-lead {
-  font-size: 1.1rem;
-  color: var(--gris);
-  max-width: 480px;
-  line-height: 1.7;
-  margin-bottom: 1rem;
-}
-
-.hero-quote {
+.hero-boal {
   font-family: 'DM Serif Display', Georgia, serif;
   font-style: italic;
-  font-size: 1rem;
-  color: var(--gris);
-  border-left: 2px solid var(--ambre-doux);
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.88);
+  border-left: 2px solid var(--ambre);
   padding-left: 1rem;
-  margin: 1rem 0;
-  line-height: 1.6;
+  margin: 0 0 1.75rem;
+  line-height: 1.65;
+  max-width: 520px;
 }
 
-.hero-img {
-  width: 100%;
-  height: 420px;
-  object-fit: cover;
+.hero-boal footer {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-size: 0.75rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  margin-top: 0.5rem;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-carousel-wrap .carousel-control-prev,
+.hero-carousel-wrap .carousel-control-next,
+.hero-carousel-wrap .carousel-indicators {
+  z-index: 4;
 }
