@@ -8,6 +8,7 @@
 /* --ambre   = Entreprise & Pro              */
 /* #6B9E78   = Famille                       */
 /* #5B8AC8   = Jeunesse                      */
+/* var(--bonus)   = Bonus                         */
 
 /* Boutons de filtre */
 .filtre-btn {
@@ -33,6 +34,9 @@
   border-color: var(--ambre);
   color: var(--blanc);
 }
+.filtre-btn.bonus { border-color: var(--bonus); color: var(--bonus); }
+.filtre-btn.bonus.active,
+.filtre-btn.bonus:hover { background: var(--bonus); border-color: var(--bonus); color: var(--blanc); }
 
 /* Carte pitch */
 .pitch-card {
@@ -55,6 +59,8 @@
 .pitch-card.entreprise { border-top-color: var(--ambre); }
 .pitch-card.famille    { border-top-color: #6B9E78; }
 .pitch-card.jeunesse   { border-top-color: #5B8AC8; }
+.pitch-card.bonus      { border-top-color: var(--bonus); }
+
 
 /* Étiquette catégorie */
 .pitch-cat {
@@ -69,6 +75,7 @@
 .pitch-cat.entreprise { color: var(--ambre); }
 .pitch-cat.famille    { color: #6B9E78; }
 .pitch-cat.jeunesse   { color: #5B8AC8; }
+.pitch-cat.bonus      { color: var(--bonus); }
 
 /* Titre */
 .pitch-titre {
@@ -175,4 +182,84 @@
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(8px); }
   to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---- Corps des modals ---- */
+.modal-pitch-img,
+.modal-carousel-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+
+.modal-pitch-img { margin-bottom: 1.25rem; }
+
+.modal-carousel { margin-bottom: 1.25rem; }
+
+.modal-format {
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--rouge);
+  margin-bottom: 0.2rem;
+}
+
+.modal-thematique {
+  font-style: italic;
+  color: var(--gris);
+  font-size: 0.92rem;
+  margin-bottom: 0.85rem;
+}
+
+.modal-resume {
+  color: var(--gris-fonce);
+  line-height: 1.65;
+  margin-bottom: 1rem;
+}
+
+.modal-mots-cles { margin-bottom: 0.75rem; }
+
+.modal-qs-label {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--dark);
+  margin: 1rem 0 0.5rem;
+  border-left: 2px solid var(--ambre);
+  padding-left: 0.6rem;
+}
+
+.modal-questions {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.modal-questions li {
+  font-style: italic;
+  color: var(--gris);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 0.35rem;
+}
+
+.modal-infos-bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--creme-fonce);
+  margin-top: 1rem;
+}
+
+.modal-infos-bar span {
+  font-size: 0.75rem;
+  background: var(--creme);
+  color: var(--gris-fonce);
+  padding: 0.25rem 0.7rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
 }

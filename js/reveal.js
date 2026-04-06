@@ -9,7 +9,7 @@
   }, { threshold: 0.1 });
 
   document.querySelectorAll(
-    'section:not(.hero-carousel-wrap) > .container, .service-card, .pitch-card, .actu-card, .membre-card, .citation-band'
+    'section:not(.hero-carousel-wrap):not(.no-reveal) > .container, .service-card, .pitch-card, .actu-card, .membre-card, .citation-band'
   ).forEach(function(el) {
     el.classList.add('reveal');
     observer.observe(el);

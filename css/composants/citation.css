@@ -74,6 +74,52 @@
   color: var(--rouge);
 }
 
+/* ── Nuage de mots animé ── */
+.nuage-cloud {
+  position: relative; width: 100%; min-height: 340px;
+  margin-top: 2rem; display: flex; flex-wrap: wrap;
+  justify-content: center; align-items: center;
+  gap: 0.6rem; padding: 1.5rem 0;
+}
+.nuage-word {
+  display: inline-block; cursor: pointer; text-decoration: none;
+  font-family: 'DM Sans', sans-serif; font-weight: 600;
+  letter-spacing: 0.5px; text-transform: uppercase;
+  border-radius: 4px;
+  transition: transform 0.5s cubic-bezier(0.25,0.8,0.25,1), box-shadow 0.5s ease, background 0.4s ease, color 0.4s ease;
+  will-change: transform;
+}
+.nuage-word:hover { transform: scale(1.08) translateY(-4px) !important; box-shadow: 0 10px 28px rgba(0,0,0,0.13) !important; }
+
+.nuage-s1 { font-size: 0.68rem; padding: 0.4rem 0.7rem; }
+.nuage-s2 { font-size: 0.82rem; padding: 0.45rem 0.85rem; }
+.nuage-s3 { font-size: 0.95rem; padding: 0.5rem 1rem; }
+.nuage-s4 { font-size: 1.1rem;  padding: 0.55rem 1.1rem; }
+.nuage-s5 { font-size: 1.3rem;  padding: 0.6rem 1.2rem; }
+
+.nuage-v-rouge     { background: var(--rouge);       color: #fff; box-shadow: 0 3px 10px rgba(200,57,42,0.25); }
+.nuage-v-rouge:hover     { background: #a82d22; }
+.nuage-v-ambre     { background: var(--ambre);       color: #fff; box-shadow: 0 3px 10px rgba(212,146,42,0.25); }
+.nuage-v-ambre:hover     { background: #b87a22; }
+.nuage-v-dark      { background: var(--dark);        color: #fff; box-shadow: 0 3px 10px rgba(0,0,0,0.2); }
+.nuage-v-dark:hover      { background: #1a1918; }
+.nuage-v-terracotta { background: #B85C38;           color: #fff; box-shadow: 0 3px 10px rgba(184,92,56,0.22); }
+.nuage-v-terracotta:hover { background: #9d4d2f; }
+.nuage-v-ocre      { background: #C4892A;            color: #fff; box-shadow: 0 3px 10px rgba(196,137,42,0.22); }
+.nuage-v-ocre:hover      { background: #a97424; }
+.nuage-v-ardoise   { background: #5A5754;            color: #fff; box-shadow: 0 3px 10px rgba(90,87,84,0.2); }
+.nuage-v-ardoise:hover   { background: #484644; }
+
+@keyframes nuageFloat1 { 0%,100% { transform: translateY(0) rotate(var(--rot)); } 50% { transform: translateY(-7px) rotate(var(--rot)); } }
+@keyframes nuageFloat2 { 0%,100% { transform: translateY(0) rotate(var(--rot)); } 50% { transform: translateY(6px)  rotate(var(--rot)); } }
+@keyframes nuageFloat3 { 0%,100% { transform: translateX(0) rotate(var(--rot)); } 50% { transform: translateX(6px) rotate(var(--rot)); } }
+
+@media (max-width: 768px) {
+  .nuage-cloud { min-height: 240px; gap: 0.4rem; }
+  .nuage-s4 { font-size: 1rem;   padding: 0.45rem 0.9rem; }
+  .nuage-s5 { font-size: 1.1rem; padding: 0.5rem 1rem; }
+}
+
 /* Nuage de mots-clés */
 .nuage-mot {
   display: inline-block;

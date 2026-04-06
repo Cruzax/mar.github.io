@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rn \"citation-band\" /mnt/c/Users/benja/OneDrive/Bureau/site theatre/*.html)"
+    ]
+  }
+}
