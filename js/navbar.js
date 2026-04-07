@@ -4,7 +4,7 @@
   if (!navbar) return;
 
   // Pages sans hero : navbar classique blanche dès le départ
-  if (!document.querySelector('.hero-carousel-wrap')) {
+  if (!document.querySelector('.hero-carousel-wrap') && !document.querySelector('.pitch-hero')) {
     navbar.classList.add('scrolled');
     return;
   }

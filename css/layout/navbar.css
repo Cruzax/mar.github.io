@@ -8,6 +8,7 @@ body { padding-top: 73px; }
 section.hero-carousel-wrap:first-of-type,
 div.hero-carousel-wrap { padding-top: 0; }
 body:has(.hero-carousel-wrap) { padding-top: 0; }
+body:has(.pitch-hero) { padding-top: 0; }
 
 .navbar {
   background: transparent !important;
