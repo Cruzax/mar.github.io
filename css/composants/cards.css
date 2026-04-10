@@ -6,7 +6,7 @@
 .service-card {
   background: var(--blanc);
   border: none;
-  border-radius: 0;
+  border-radius: 0.75rem;
   padding: 2.5rem 2rem;
   height: 100%;
   transition: transform 0.25s, box-shadow 0.25s;
@@ -40,6 +40,7 @@
 .membre-card {
   background: var(--blanc);
   overflow: hidden;
+  border-radius: 0.75rem;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   height: 100%;
   transition: box-shadow 0.25s;
@@ -84,6 +85,8 @@
 .actu-card {
   background: var(--blanc);
   border: none;
+  border-radius: 0.75rem;
+  overflow: hidden;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   transition: box-shadow 0.25s;
 }
