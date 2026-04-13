@@ -31,20 +31,32 @@ body:has(.pitch-hero) { padding-top: 0; }
 }
 
 .logo-placeholder {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 72px;
-  height: 34px;
-  background: var(--creme);
-  border: 1.5px dashed var(--gris-clair);
-  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+.logo-placeholder .logo-mar {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-size: 1.8rem;
+  letter-spacing: 3px;
+  color: var(--rouge);
+  transition: color 0.35s ease;
+}
+.navbar:not(.scrolled) .logo-placeholder .logo-mar {
+  color: var(--blanc);
+}
+.logo-placeholder .logo-asso {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.62rem;
-  font-weight: 500;
+  font-size: 0.6rem;
+  font-weight: 600;
   letter-spacing: 2.5px;
   text-transform: uppercase;
   color: var(--gris);
+  transition: color 0.35s ease;
+}
+.navbar:not(.scrolled) .logo-placeholder .logo-asso {
+  color: rgba(255,255,255,0.6);
 }
 
 /* Logo — placeholder texte jusqu'à réception du fichier logo-mar.png */
