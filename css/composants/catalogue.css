@@ -42,17 +42,34 @@
 .pitch-card {
   background: var(--blanc);
   border-top: 3px solid var(--rouge);
-  padding: 1.5rem;
+  padding: 0;
   height: 100%;
   cursor: pointer;
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 .pitch-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* Photo de la card */
+.pitch-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Corps texte de la card */
+.pitch-card-content {
+  padding: 1.25rem 1.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 /* Variantes de couleur par catégorie */
@@ -129,7 +146,8 @@
   color: var(--rouge);
   text-transform: uppercase;
   display: block;
-  margin-top: 0.75rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
 }
 .pitch-card.entreprise .pitch-lire { color: var(--ambre); }
 .pitch-card.famille    .pitch-lire { color: #6B9E78; }

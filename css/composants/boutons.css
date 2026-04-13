@@ -24,8 +24,9 @@
   border: 1.5px solid var(--rouge);
 }
 .btn-rouge:hover {
-  background: transparent;
-  color: var(--rouge);
+  background: var(--rouge-doux);
+  border-color: var(--rouge-doux);
+  color: var(--blanc);
   text-decoration: none;
 }
 
@@ -36,8 +37,9 @@
   border: 1.5px solid var(--ambre);
 }
 .btn-ambre:hover {
-  background: transparent;
-  color: var(--ambre);
+  background: var(--ambre-doux);
+  border-color: var(--ambre-doux);
+  color: var(--blanc);
   text-decoration: none;
 }
 

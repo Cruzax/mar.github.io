@@ -10,11 +10,23 @@
   }
 
   function update() {
-    if (window.scrollY > 40) {
+    var menuOpen = document.querySelector('.navbar-collapse.show');
+    if (window.scrollY > 40 || menuOpen) {
       navbar.classList.add('scrolled');
     } else {
       navbar.classList.remove('scrolled');
     }
+  }
+
+  // Quand le menu burger s'ouvre/se ferme
+  var collapse = document.querySelector('.navbar-collapse');
+  if (collapse) {
+    collapse.addEventListener('show.bs.collapse', function () {
+      navbar.classList.add('scrolled');
+    });
+    collapse.addEventListener('hidden.bs.collapse', function () {
+      update();
+    });
   }
 
   window.addEventListener('scroll', update, { passive: true });
