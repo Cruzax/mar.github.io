@@ -145,10 +145,17 @@
   letter-spacing: 1px;
   color: var(--rouge);
   text-transform: uppercase;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
   display: block;
   margin-top: auto;
+  margin-right: auto;
   padding-top: 0.75rem;
+  transition: opacity 0.2s;
 }
+.pitch-lire:hover { opacity: 0.75; }
 .pitch-card.entreprise .pitch-lire { color: var(--ambre); }
 .pitch-card.famille    .pitch-lire { color: #6B9E78; }
 .pitch-card.jeunesse   .pitch-lire { color: #5B8AC8; }
