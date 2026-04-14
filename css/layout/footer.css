@@ -39,19 +39,29 @@ footer ul li { margin-bottom: 0.5rem; font-size: 0.88rem; }
 
 .footer-logo-placeholder {
   display: inline-flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  width: 80px;
-  height: 38px;
-  background: var(--creme);
-  border: 1.5px dashed var(--gris-clair);
-  border-radius: 3px;
+  line-height: 1;
+}
+
+.footer-logo-mar {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.6rem;
+  color: var(--rouge);
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.footer-logo-asso {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.62rem;
+  font-size: 0.55rem;
   font-weight: 500;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--gris);
+  color: var(--creme);
+  opacity: 0.6;
+  margin-top: 2px;
 }
 
 .footer-bottom {
