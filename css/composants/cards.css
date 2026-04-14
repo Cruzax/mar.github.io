@@ -90,6 +90,12 @@
   box-shadow: 0 1px 4px rgba(0,0,0,0.06);
   transition: box-shadow 0.25s;
 }
+.actu-card .card-img-top {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  object-position: center;
+}
 .actu-card:hover {
   box-shadow: 0 8px 24px rgba(0,0,0,0.1);
 }
