@@ -42,7 +42,7 @@
       <div class="col-lg-7">
         <h2 class="section-title">Envoyez-nous <em>un message</em></h2>
         <div class="section-divider"></div>
-        <p style="color:var(--gris);">Vous souhaitez un atelier, un spectacle, une conférence ou des informations ? Remplissez ce formulaire et nous vous répondrons dans les meilleurs délais.</p>
+        <p class="text-gris">Vous souhaitez un atelier, un spectacle, une conférence ou des informations ? Remplissez ce formulaire et nous vous répondrons dans les meilleurs délais.</p>
 
         <form class="mt-4" action="mailto:contact@assomar.fr" method="get" enctype="text/plain">
           <div class="row g-3">
@@ -75,7 +75,7 @@
                 <option value="autre">Autre / Renseignements</option>
               </select>
             </div>
-            <div class="col-12" id="spectacle-group" style="display:none;">
+            <div class="col-12" id="spectacle-group">
               <label class="form-label">Spectacle concerné</label>
               <select class="form-control" id="spectacle-select">
                 <option value="" disabled selected>Choisissez un spectacle</option>
@@ -105,16 +105,16 @@
             <div class="col-12">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="rgpd" required>
-                <label class="form-check-label" for="rgpd" style="font-size:0.85rem; color:var(--gris);">
+                <label class="form-check-label form-note" for="rgpd">
                   J'accepte que mes données personnelles soient utilisées pour traiter ma demande, conformément à la <a href="mentions-legales.html#confidentialite" target="_blank">politique de confidentialité</a> de l'Association MAR. *
                 </label>
               </div>
             </div>
             <div class="col-12">
-              <p style="font-size:0.8rem; color:var(--gris);">* Champs obligatoires. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. <a href="mentions-legales.html#droits">En savoir plus sur vos droits.</a></p>
+              <p class="form-note-sm">* Champs obligatoires. Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression de vos données. <a href="mentions-legales.html#droits">En savoir plus sur vos droits.</a></p>
             </div>
             <div class="col-12">
-              <button type="submit" class="btn-rouge w-100" style="padding:1rem; font-size:1rem;">
+              <button type="submit" class="btn-rouge w-100 btn-submit">
                 <i class="bi bi-send me-2"></i>Envoyer le message
               </button>
             </div>
@@ -175,12 +175,12 @@
 </section>
 
 <!-- PHOTOS BAS DE PAGE -->
-<section class="section-alt no-reveal" style="padding:2rem 0;">
+<section class="section-alt no-reveal section-photos">
   <div class="container">
     <div class="row g-2">
-      <div class="col-4"><img src="images/spectacles/scene-02.jpg" class="img-fluid w-100" style="height:160px;object-fit:cover;" alt="MAR"></div>
-      <div class="col-4"><img src="images/spectacles/scene-15.jpg" class="img-fluid w-100" style="height:160px;object-fit:cover;" alt="MAR"></div>
-      <div class="col-4"><img src="images/spectacles/scene-16.jpg" class="img-fluid w-100" style="height:160px;object-fit:cover;" alt="MAR"></div>
+      <div class="col-4"><img src="images/spectacles/scene-02.jpg" class="img-fluid w-100 contact-photo" alt="MAR"></div>
+      <div class="col-4"><img src="images/spectacles/scene-15.jpg" class="img-fluid w-100 contact-photo" alt="MAR"></div>
+      <div class="col-4"><img src="images/spectacles/scene-16.jpg" class="img-fluid w-100 contact-photo" alt="MAR"></div>
     </div>
   </div>
 </section>
@@ -190,7 +190,7 @@
     <div class="row g-4">
       <div class="col-lg-4">
         <div class="footer-logo-placeholder"><span class="footer-logo-mar">MAR</span><span class="footer-logo-asso">Association</span></div>
-        <p class="mt-2" style="font-size:0.9rem;">Méthodes Alternatives de Régulation<br>Promouvoir le dialogue social à travers le théâtre forum.</p>
+        <p class="mt-2 footer-slogan">Méthodes Alternatives de Régulation</p>
         <div class="mt-3">
           <a href="https://www.facebook.com/profile.php?id=61551824633043" class="social-link" target="_blank"><i class="bi bi-facebook"></i></a>
           <a href="https://www.instagram.com/association_mar_theatre_forum?igsh=MWlxeDFoOXNvcmVjaw%3D%3D&utm_source=qr" class="social-link" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -211,13 +211,13 @@
       <div class="col-lg-4">
         <h5>Contact</h5>
         <ul>
-          <li><i class="bi bi-geo-alt-fill me-2" style="color:var(--ambre-doux)"></i>1 rue de l'école, 25000 Besançon</li>
-          <li><i class="bi bi-envelope-fill me-2" style="color:var(--ambre-doux)"></i><a href="mailto:contact@assomar.fr">contact@assomar.fr</a></li>
-          <li><i class="bi bi-telephone-fill me-2" style="color:var(--ambre-doux)"></i><a href="tel:0769181710">07 69 18 17 10</a></li>
+          <li><i class="bi bi-geo-alt-fill me-2 footer-icon"></i>1 rue de l'école, 25000 Besançon</li>
+          <li><i class="bi bi-envelope-fill me-2 footer-icon"></i><a href="mailto:contact@assomar.fr">contact@assomar.fr</a></li>
+          <li><i class="bi bi-telephone-fill me-2 footer-icon"></i><a href="tel:0769181710">07 69 18 17 10</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">&copy; 2025 Association MAR — Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;opacity:.7;">Mentions légales</a> &nbsp;|&nbsp; <a href="mentions-legales.html#confidentialite" style="color:inherit;opacity:.7;">Confidentialité</a></div>
+    <div class="footer-bottom">&copy; 2025 Association MAR — Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" class="footer-legal">Mentions légales</a> &nbsp;|&nbsp; <a href="mentions-legales.html#confidentialite" class="footer-legal">Confidentialité</a></div>
   </div>
 </footer>
 

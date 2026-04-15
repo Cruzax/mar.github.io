@@ -35,7 +35,7 @@
 
 
 <!-- INTRO + 2 OPTIONS -->
-<section style="padding-bottom:2.5rem;">
+<section class="section-intro">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
@@ -46,25 +46,27 @@
       </div>
       <div class="col-lg-6 mt-4 mt-lg-0">
         <img src="images/proposees/photo-3.jpg"
-             alt="Spectacle MAR" class="img-fluid w-100" style="max-height:340px;object-fit:cover;">
+             alt="Spectacle MAR" class="img-fluid section-img section-img-md">
       </div>
     </div>
 
     <!-- 2 OPTIONS -->
     <div class="row g-3 mt-4">
       <div class="col-6">
-        <div class="text-center py-4 px-3" style="background:var(--creme-fonce); border-top:4px solid var(--ambre);">
-          <span style="font-size:0.65rem; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--ambre);">Sur mesure</span>
-          <p style="font-size:1.15rem; font-family:'DM Serif Display',serif; color:var(--brun); margin:0.4rem 0 0.4rem; white-space:nowrap;"><em>Un spectacle rien que pour vous</em></p>
-          <p style="font-size:0.82rem; color:var(--gris); margin:0 0 1rem;">Construit à partir de vos situations et besoins spécifiques.</p>
+        <div class="text-center py-4 px-3 spec-option spec-option-ambre">
+          <i class="bi bi-bricks spec-option-icon" style="color:var(--ambre);"></i>
+          <span class="spec-label spec-label-ambre">Sur mesure</span>
+          <p class="spec-option-title"><em>Un spectacle rien que pour vous</em></p>
+          <p class="spec-option-desc">Construit à partir de vos situations et besoins spécifiques.</p>
           <a href="contact.html" class="btn-ambre">Nous contacter</a>
         </div>
       </div>
       <div class="col-6">
-        <div class="text-center py-4 px-3" style="background:var(--creme-fonce); border-top:4px solid var(--rouge);">
-          <span style="font-size:0.65rem; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--rouge);">Clé en main</span>
-          <p style="font-size:1.15rem; font-family:'DM Serif Display',serif; color:var(--brun); margin:0.4rem 0 0.4rem; white-space:nowrap;"><em>18 créations prêtes à jouer</em></p>
-          <p style="font-size:0.82rem; color:var(--gris); margin:0 0 1rem;">Inspirées d'histoires réelles, adaptées à tous les publics.</p>
+        <div class="text-center py-4 px-3 spec-option spec-option-rouge">
+          <i class="bi bi-key spec-option-icon" style="color:var(--rouge);"></i>
+          <span class="spec-label spec-label-rouge">Clé en main</span>
+          <p class="spec-option-title"><em>18 créations prêtes à jouer</em></p>
+          <p class="spec-option-desc">Inspirées d'histoires réelles, adaptées à tous les publics.</p>
           <a href="#repertoire" class="btn-rouge">Voir le répertoire</a>
         </div>
       </div>
@@ -74,13 +76,13 @@
 
 <!-- RÉPERTOIRE -->
 
-<section id="repertoire" class="no-reveal" style="padding-top:2rem;">
+<section id="repertoire" class="no-reveal section-catalogue">
   <div class="container">
     <div class="text-center mb-4">
       <span class="section-eyebrow">Catalogue</span>
       <h2 class="section-title">Notre <em>répertoire</em></h2>
       <div class="section-divider mx-auto"></div>
-      <p style="color:var(--gris); max-width:600px; margin:0 auto;">18 spectacles créés depuis 2023</p>
+      <p class="text-note lead-centered-sm">18 spectacles créés depuis 2023</p>
     </div>
 
     <!-- Filtres -->
@@ -301,8 +303,8 @@
 
     </div>
     <div class="text-center mt-5">
-      <p style="color:var(--gris); font-size:0.9rem;">Vous ne trouvez pas votre thématique ?</p>
-      <a href="contact.html" class="btn-ambre" style="display:inline-block; margin-top:0.5rem;">Créer un spectacle sur mesure</a>
+      <p class="text-note">Vous ne trouvez pas votre thématique ?</p>
+      <a href="contact.html" class="btn-ambre mt-2">Créer un spectacle sur mesure</a>
     </div>
   </div>
 </section>
@@ -313,21 +315,21 @@
     <h2 class="section-title text-center">MAR en <em>action</em></h2>
     <div class="section-divider mx-auto"></div>
     <div class="row g-2 mt-2">
-      <div class="col-6 col-md-4"><img src="images/spectacles/scene-13.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
-      <div class="col-6 col-md-4"><img src="images/spectacles/scene-09.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
-      <div class="col-6 col-md-4"><img src="images/spectacles/scene-10.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
-      <div class="col-6 col-md-4"><img src="images/spectacles/scene-14.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
-      <div class="col-6 col-md-4"><img src="images/spectacles/scene-15.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
-      <div class="col-6 col-md-4"><img src="images/spectacles/scene-16.jpg" class="img-fluid w-100" style="height:200px;object-fit:cover;" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-13.jpg" class="img-fluid grid-img" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-09.jpg" class="img-fluid grid-img" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-10.jpg" class="img-fluid grid-img" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-14.jpg" class="img-fluid grid-img" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-15.jpg" class="img-fluid grid-img" alt="MAR"></div>
+      <div class="col-6 col-md-4"><img src="images/spectacles/scene-16.jpg" class="img-fluid grid-img" alt="MAR"></div>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section style="background:var(--dark); color:#fff; text-align:center; padding:3rem 0;">
+<section class="section-cta">
   <div class="container">
-    <h2 style="color:#fff;">Un projet ? Une thématique à explorer ?</h2>
-    <p class="mt-2" style="color:rgba(255,255,255,0.8);">Contactez-nous pour construire ensemble un spectacle adapté à vos besoins.</p>
+    <h2>Un projet ? Une thématique à explorer ?</h2>
+    <p class="mt-2">Contactez-nous pour construire ensemble un spectacle adapté à vos besoins.</p>
     <a href="contact.html" class="btn-ambre">Nous contacter</a>
   </div>
 </section>
@@ -337,7 +339,7 @@
     <div class="row g-4">
       <div class="col-lg-4">
         <div class="footer-logo-placeholder"><span class="footer-logo-mar">MAR</span><span class="footer-logo-asso">Association</span></div>
-        <p class="mt-2" style="font-size:0.9rem;">Méthodes Alternatives de Régulation</p>
+        <p class="mt-2 footer-slogan">Méthodes Alternatives de Régulation</p>
         <div class="mt-3">
           <a href="https://www.facebook.com/profile.php?id=61551824633043" class="social-link" target="_blank"><i class="bi bi-facebook"></i></a>
           <a href="https://www.instagram.com/association_mar_theatre_forum?igsh=MWlxeDFoOXNvcmVjaw%3D%3D&utm_source=qr" class="social-link" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -358,28 +360,31 @@
       <div class="col-lg-4">
         <h5>Contact</h5>
         <ul>
-          <li><i class="bi bi-geo-alt-fill me-2" style="color:var(--ambre-doux)"></i>1 rue de l'école, 25000 Besançon</li>
-          <li><i class="bi bi-envelope-fill me-2" style="color:var(--ambre-doux)"></i><a href="mailto:contact@assomar.fr">contact@assomar.fr</a></li>
-          <li><i class="bi bi-telephone-fill me-2" style="color:var(--ambre-doux)"></i><a href="tel:0769181710">07 69 18 17 10</a></li>
+          <li><i class="bi bi-geo-alt-fill me-2 footer-icon"></i>1 rue de l'école, 25000 Besançon</li>
+          <li><i class="bi bi-envelope-fill me-2 footer-icon"></i><a href="mailto:contact@assomar.fr">contact@assomar.fr</a></li>
+          <li><i class="bi bi-telephone-fill me-2 footer-icon"></i><a href="tel:0769181710">07 69 18 17 10</a></li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">&copy; 2025 Association MAR — Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" style="color:inherit;opacity:.7;">Mentions légales</a> &nbsp;|&nbsp; <a href="mentions-legales.html#confidentialite" style="color:inherit;opacity:.7;">Confidentialité</a></div>
+    <div class="footer-bottom">&copy; 2025 Association MAR — Tous droits réservés &nbsp;|&nbsp; <a href="mentions-legales.html" class="footer-legal">Mentions légales</a> &nbsp;|&nbsp; <a href="mentions-legales.html#confidentialite" class="footer-legal">Confidentialité</a></div>
   </div>
 </footer>
 
 <!-- MODAL PITCH -->
 <div class="modal fade" id="pitchModal" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" style="max-width:520px;">
-    <div class="modal-content" style="border:none; border-radius:0.75rem; overflow:hidden;">
-      <div style="position:relative;">
-        <img id="modalImg" src="" alt="" style="width:100%; height:260px; object-fit:cover; display:block;">
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" style="position:absolute; top:0.75rem; right:0.75rem; z-index:10;"></button>
+  <div class="modal-dialog modal-dialog-centered pitch-popup-dialog">
+    <div class="modal-content pitch-popup-content">
+      <div class="pitch-popup-img-wrap">
+        <img id="modalImg" src="" alt="" class="pitch-popup-img">
+        <button type="button" class="btn-close btn-close-white pitch-popup-close" data-bs-dismiss="modal"></button>
       </div>
-      <div style="padding:1.5rem; max-height:60vh; overflow-y:auto;">
-        <span id="modalTheme" style="font-size:0.65rem; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:var(--rouge);"></span>
-        <h3 id="modalTitre" style="font-family:'DM Serif Display',serif; font-size:1.25rem; margin:0.4rem 0 0.75rem;"></h3>
-        <p id="modalResume" style="font-size:0.9rem; color:var(--gris); margin:0; line-height:1.6;"></p>
+      <div class="pitch-popup-body">
+        <span id="modalTheme" class="pitch-popup-theme"></span>
+        <h3 id="modalTitre" class="pitch-popup-titre"></h3>
+        <p id="modalResume" class="pitch-popup-resume"></p>
+        <div class="mt-4 pt-3 pitch-popup-sep">
+          <a id="modalCta" href="contact.html" class="btn-rouge">Nous contacter pour ce spectacle</a>
+        </div>
       </div>
     </div>
   </div>
@@ -423,6 +428,7 @@ document.getElementById('pitchModal').addEventListener('show.bs.modal', function
   document.getElementById('modalImg').alt = img ? img.alt : '';
   document.getElementById('modalTheme').textContent = p.theme || '';
   document.getElementById('modalTitre').textContent = titre ? titre.textContent : '';
+  document.getElementById('modalCta').href = 'contact.html?spectacle=' + encodeURIComponent(titre ? titre.textContent : '');
   document.getElementById('modalResume').textContent = p.resume || '';
   document.getElementById('modalScenarios').textContent = p.scenarios || '';
   document.getElementById('modalDuree').textContent = p.duree || '';

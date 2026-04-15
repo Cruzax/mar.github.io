@@ -15,7 +15,8 @@
   .hero-boal          { font-size: 1rem; max-width: 100%; }
 
   /* Carousel photos */
-  .carousel-item img { height: 380px; }
+  .carousel-photo-img { height: 420px; }
+  .carousel-item img  { height: 380px; }
 }
 
 
@@ -31,9 +32,9 @@
   .hero-boal          { font-size: 0.95rem; }
   .hero-ctas          { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
 
-  /* Carousel photos accueil — inline height:580px → !important obligatoire */
-  #carouselPhotos .carousel-item img { height: 340px !important; }
-  .carousel-item img                 { height: 300px; }
+  /* Carousel photos accueil */
+  .carousel-photo-img { height: 340px; }
+  .carousel-item img  { height: 300px; }
 
   /* Citations */
   .citation-band            { padding: 2.5rem 0; }
@@ -63,8 +64,8 @@
   .hero-ctas .btn-ambre { display: block; text-align: center; }
 
   /* Carousel photos */
-  #carouselPhotos .carousel-item img { height: 260px !important; }
-  .carousel-item img                 { height: 240px; }
+  .carousel-photo-img { height: 260px; }
+  .carousel-item img  { height: 240px; }
 
   /* Fix texte débordant : "Un spectacle rien que pour vous" etc. dans spectacles.html */
   p[style*="white-space:nowrap"] { white-space: normal !important; }

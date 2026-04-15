@@ -3,6 +3,43 @@
    (filtres, pitch cards, modals)
    ============================================= */
 
+/* ── Blocs Sur mesure / Clé en main ── */
+.spec-option-ambre {
+  background: #EDE5D4;
+  border-top: 3px solid var(--ambre);
+}
+.spec-option-rouge {
+  background: #EDE0DE;
+  border-top: 3px solid var(--rouge);
+}
+.spec-option-icon {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 0.6rem;
+}
+.spec-label {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+.spec-label-ambre { color: var(--ambre); }
+.spec-label-rouge { color: var(--rouge); }
+.spec-option-title {
+  font-size: 1.15rem;
+  font-family: 'DM Serif Display', serif;
+  color: var(--brun);
+  margin: 0.4rem 0;
+  white-space: nowrap;
+}
+.spec-option-desc {
+  font-size: 0.82rem;
+  color: var(--gris);
+  margin: 0 0 1rem;
+}
+
 /* Couleurs spécifiques aux catégories */
 /* --rouge   = Adultes (variable globale)    */
 /* --ambre   = Entreprise & Pro              */
@@ -203,6 +240,32 @@
   font-size: 0.9rem;
   line-height: 1.6;
 }
+
+/* ---- Blocs "Sur mesure / Clé en main" ---- */
+.spec-option-ambre { background: #EDE5D4; border-top: 4px solid var(--ambre); }
+.spec-option-rouge { background: #EDE0DE; border-top: 4px solid var(--rouge); }
+.spec-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: block; }
+.spec-label-ambre { color: var(--ambre); }
+.spec-label-rouge { color: var(--rouge); }
+.spec-option-title {
+  font-size: 1.15rem;
+  font-family: 'DM Serif Display', serif;
+  color: var(--dark);
+  margin: 0.4rem 0;
+}
+.spec-option-desc { font-size: 0.82rem; color: var(--gris); margin: 0 0 1rem; }
+
+/* ---- Popup pitch (modal Bootstrap) ---- */
+.pitch-popup-dialog  { max-width: 520px; }
+.pitch-popup-content { border: none; border-radius: 0.75rem; overflow: hidden; }
+.pitch-popup-img-wrap { position: relative; }
+.pitch-popup-img  { width: 100%; height: 260px; object-fit: cover; display: block; }
+.pitch-popup-close { position: absolute; top: 0.75rem; right: 0.75rem; z-index: 10; }
+.pitch-popup-body { padding: 1.5rem; max-height: 60vh; overflow-y: auto; }
+.pitch-popup-theme { font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--rouge); }
+.pitch-popup-titre { font-family: 'DM Serif Display', serif; font-size: 1.25rem; margin: 0.4rem 0 0.75rem; color: var(--dark); }
+.pitch-popup-resume { font-size: 0.9rem; color: var(--gris); margin: 0; line-height: 1.6; }
+.pitch-popup-sep { border-top: 1px solid var(--creme-fonce); }
 
 /* Animation d'entrée des cartes */
 @keyframes fadeIn {
