@@ -40,6 +40,23 @@
   margin: 0 0 1rem;
 }
 
+@media (max-width: 768px) {
+  .spec-option-title          { font-size: 0.95rem; white-space: normal; }
+  .spec-option-desc           { display: none; }
+  .spec-option-icon           { font-size: 1.2rem; margin-bottom: 0.4rem; }
+  .spec-option                { padding: 1.25rem 0.75rem !important; }
+  .spec-option .btn-ambre,
+  .spec-option .btn-rouge     { font-size: 0.72rem; padding: 0.35rem 0.75rem; letter-spacing: 0.5px; display: block; width: 100%; text-align: center; }
+}
+
+@media (max-width: 576px) {
+  .spec-option-title          { font-size: 0.82rem; }
+  .spec-label                 { font-size: 0.58rem; letter-spacing: 1px; }
+  .spec-option                { padding: 1rem 0.5rem !important; }
+  .spec-option .btn-ambre,
+  .spec-option .btn-rouge     { font-size: 0.68rem; padding: 0.3rem 0.5rem; }
+}
+
 /* Couleurs spécifiques aux catégories */
 /* --rouge   = Adultes (variable globale)    */
 /* --ambre   = Entreprise & Pro              */
