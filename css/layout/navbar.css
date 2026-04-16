@@ -103,6 +103,18 @@ body:has(.pitch-hero) { padding-top: 0; }
   color: var(--blanc);
 }
 
+/* Burger blanc sur hero, sombre après scroll */
+.navbar-toggler {
+  border: none !important;
+  padding: 0.25rem 0.5rem;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255,255,255,0.9)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.navbar.scrolled .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(61,58,56,0.9)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
 /* Menu mobile — fond crème quand ouvert */
 @media (max-width: 991px) {
   .navbar-collapse.show,
