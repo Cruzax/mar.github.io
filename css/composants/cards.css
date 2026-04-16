@@ -179,7 +179,7 @@
   color: #9a7200;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .actu-card-h { flex-direction: column; }
   .actu-card-h-img { width: 100%; height: 200px; }
   .actu-card-h-body { padding: 1.25rem; }
