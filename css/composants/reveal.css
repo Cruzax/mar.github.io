@@ -12,3 +12,14 @@
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Citation inline — arrive en cascade après son parent container */
+.citation-inline {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.9s ease 0.35s, transform 0.9s ease 0.35s;
+}
+.reveal.revealed .citation-inline {
+  opacity: 1;
+  transform: translateY(0);
+}

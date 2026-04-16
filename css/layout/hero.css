@@ -81,6 +81,20 @@
   margin: 0 0 1.75rem;
   line-height: 1.65;
   max-width: 520px;
+  opacity: 0;
+  animation: boalArrive 1s ease forwards;
+  animation-delay: 1.1s;
+}
+
+@keyframes boalArrive {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .hero-boal footer {
