@@ -274,11 +274,11 @@
 
 /* ---- Popup pitch (modal Bootstrap) ---- */
 .pitch-popup-dialog  { max-width: 760px; }
-.pitch-popup-content { border: none; border-radius: 0.75rem; overflow: hidden; }
+.pitch-popup-content { border: none; border-radius: 0.75rem; overflow-y: auto; max-height: 90vh; }
 .pitch-popup-img-wrap { position: relative; }
 .pitch-popup-img  { width: 100%; height: 280px; object-fit: cover; display: block; }
 .pitch-popup-close { position: absolute; top: 0.75rem; right: 0.75rem; z-index: 10; }
-.pitch-popup-body { padding: 1.5rem; max-height: 60vh; overflow-y: auto; }
+.pitch-popup-body { padding: 1.5rem; }
 .pitch-popup-theme { font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--rouge); }
 .pitch-popup-titre { font-family: 'DM Serif Display', serif; font-size: 1.25rem; margin: 0.4rem 0 0.75rem; color: var(--dark); }
 .pitch-popup-resume { font-size: 0.9rem; color: var(--gris); margin: 0; line-height: 1.6; }
