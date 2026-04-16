@@ -92,8 +92,10 @@
   font-size: 0.75rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.55);
+  color: rgba(255, 255, 255, 0.8);
+  background: transparent;
   margin-top: 0.5rem;
+  padding: 0;
 }
 
 .hero-ctas {

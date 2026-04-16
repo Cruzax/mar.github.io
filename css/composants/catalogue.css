@@ -282,6 +282,9 @@
 .pitch-popup-theme { font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--rouge); }
 .pitch-popup-titre { font-family: 'DM Serif Display', serif; font-size: 1.25rem; margin: 0.4rem 0 0.75rem; color: var(--dark); }
 .pitch-popup-resume { font-size: 0.9rem; color: var(--gris); margin: 0; line-height: 1.6; }
+.pitch-popup-infos { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1rem 0; padding: 0.75rem; background: var(--creme-fonce); border-radius: 0.5rem; font-size: 0.8rem; }
+.pitch-popup-questions-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--rouge); margin: 1rem 0 0.4rem; }
+.pitch-popup-questions { padding-left: 1.25rem; margin: 0; font-size: 0.88rem; color: var(--brun); line-height: 1.7; }
 .pitch-popup-sep { border-top: 1px solid var(--creme-fonce); }
 
 /* Animation d'entrée des cartes */
