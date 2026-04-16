@@ -95,10 +95,10 @@
 .carousel-photos-section { padding: 0; position: relative; }
 .carousel-photo-img {
   width: 100%;
-  aspect-ratio: 2 / 1;
-  height: auto;
+  height: 580px;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
+  display: block;
 }
 
 /* Dégradé bas de carrousel */
