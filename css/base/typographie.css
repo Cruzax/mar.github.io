@@ -68,3 +68,54 @@ a:hover {
   margin-bottom: 2rem;
 }
 
+/* Titre de carte / sous-section — uppercase avec letter-spacing */
+.titre-carte {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Icônes grande taille */
+.icon-xl { font-size: 1.8rem; }
+.icon-lg { font-size: 1.5rem; flex-shrink: 0; margin-top: 2px; }
+
+/* Couleurs d'icônes */
+.icon-rouge { color: var(--rouge); }
+.icon-ambre { color: var(--ambre); }
+.icon-dark  { color: var(--dark); }
+
+/* Icônes chevron dans listes */
+.chevron-rouge { color: var(--rouge); font-size: 1.1rem; flex-shrink: 0; }
+.chevron-ambre { color: var(--ambre); font-size: 1rem;  flex-shrink: 0; margin-top: 2px; }
+
+/* Légende photo */
+.photo-caption { font-size: 0.85rem; color: var(--gris); font-style: italic; margin-top: 0.5rem; }
+
+/* Note inline dans un titre (ex: "(À améliorer)") */
+.title-note {
+  font-size: 1rem;
+  color: var(--gris);
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+}
+
+/* Lead accrocheur (rouge, gras) */
+.lead-rouge {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--rouge);
+}
+
+/* Puce décorative ambre dans les listes */
+.bullet-ambre { color: var(--ambre); font-size: 1.3rem; }
+
+/* Petite note descriptive (grise, 0.9rem) */
+.text-note { font-size: 0.9rem; color: var(--gris); }
+
+/* Couleur grise sans changement de taille */
+.text-gris { color: var(--gris); }
+
+/* Lead centré avec largeur max */
+.lead-centered    { max-width: 700px; margin: 0 auto; }
+.lead-centered-sm { max-width: 600px; margin: 0 auto; }
+

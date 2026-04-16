@@ -81,6 +81,67 @@
   line-height: 1.6;
 }
 
+/* --- Cartes objectifs (théâtre-forum) --- */
+.objectif-card {
+  padding: 1rem;
+  height: 100%;
+  text-align: center;
+  background: var(--creme);
+}
+.objectif-card-rouge { border-top: 4px solid var(--rouge); }
+.objectif-card-ambre { border-top: 4px solid var(--ambre); }
+
+/* --- Encarts colorés (MAR acronyme / callouts) --- */
+.encart-rouge { background: var(--rouge); color: #fff; border-radius: 0.75rem; }
+.encart-ambre { background: var(--ambre); color: #fff; border-radius: 0.75rem; }
+.encart-dark  { background: var(--dark);  color: #fff; border-radius: 0.75rem; }
+/* Force la couleur blanche sur p et h4 à l'intérieur (p a sa propre couleur en base) */
+.encart-rouge p, .encart-ambre p, .encart-dark p,
+.encart-rouge h4, .encart-ambre h4, .encart-dark h4 { color: #fff; }
+
+/* --- Placeholder photo membre (avant upload image) --- */
+.membre-placeholder { width: 100%; height: 280px; background: var(--creme-fonce); }
+
+/* --- Sous-titre membre (caché, réservé pour usage futur) --- */
+.card-subtitle { display: none; }
+
+/* --- Onglets de navigation 01/02/03 --- */
+.option-tab { padding: 0.75rem; color: #fff; }
+.option-tab p { color: #fff; margin: 0; }
+.option-tab-rouge { background: var(--rouge); }
+.option-tab-ambre { background: var(--ambre); }
+.option-tab-dark  { background: var(--dark); }
+
+/* --- Encadré highlight ambre --- */
+.highlight-box {
+  background: var(--ambre);
+  border-left: 4px solid var(--dark);
+  padding: 0.75rem 1rem;
+}
+.highlight-box-plain { background: var(--ambre); padding: 0.75rem 1rem; }
+
+/* --- Badge numéroté 01 / 02 / 03 --- */
+.num-badge {
+  font-size: 2.5rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  flex-shrink: 0;
+}
+.num-badge-rouge { background: var(--rouge); color: #fff; }
+.num-badge-ambre { background: var(--ambre); color: var(--dark); }
+.num-badge-dark  { background: var(--dark);  color: #fff; }
+
+/* --- Placeholder "à venir" --- */
+.actu-placeholder {
+  border: 2px dashed #ddd;
+  background: var(--creme);
+}
+.actu-placeholder-icon { font-size: 2rem; color: #ccc; }
+
 /* --- Cards actualités --- */
 .actu-card {
   background: var(--blanc);

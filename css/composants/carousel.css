@@ -80,6 +80,35 @@
   transition: background 0.2s;
   padding: 0;
 }
+.temo-dot-active   { background: var(--ambre); }
+.temo-dot-inactive { background: var(--gris-clair); }
+
+/* Séparateur décoratif dans les auteurs de témoignages */
+.temo-separator {
+  width: 32px;
+  height: 1px;
+  background: var(--ambre-doux);
+  margin: 0 auto 1rem;
+}
+
+/* Carrousel photos pleine largeur */
+.carousel-photos-section { padding: 0; position: relative; }
+.carousel-photo-img {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+/* Dégradé bas de carrousel */
+.carousel-gradient-overlay {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, transparent, #1E1C1A);
+  pointer-events: none;
+  z-index: 10;
+}
 
 .temo-nav {
   background: none;

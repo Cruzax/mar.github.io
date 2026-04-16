@@ -23,6 +23,53 @@ section:not(.hero-carousel-wrap) {
   padding-top: 4.5rem;
 }
 
-.section-alt {
+section.section-alt {
   background: var(--creme-fonce);
+}
+
+/* Images de section avec hauteur max */
+.section-img          { width: 100%; object-fit: cover; display: block; }
+.img-grayscale        { filter: grayscale(100%); }
+.section-img-xl { max-height: 420px; }
+.section-img-lg { max-height: 380px; }
+.section-img-md { max-height: 360px; }
+.section-img-sm { max-height: 320px; }
+.section-img-xs { max-height: 280px; }
+
+/* Grille photos (galerie miniature) */
+.grid-img { height: 200px; object-fit: cover; width: 100%; display: block; }
+
+/* Variantes de padding de section */
+.section-intro    { padding-bottom: 2.5rem; }
+.section-catalogue { padding-top: 2rem; }
+
+/* Container mentions légales */
+.container-legal { max-width: 860px; min-height: 50vh; }
+
+/* Section photos (contact) */
+.section-photos { padding: 2rem 0; }
+.contact-photo  { height: 160px; object-fit: cover; }
+
+/* Section découvrir (accueil) : arrondie, flottante par-dessus le hero */
+.section-decouvrir {
+  border-radius: 1.5rem 1.5rem 0 0;
+  position: relative;
+  z-index: 2;
+  margin-top: -2.5rem;
+}
+
+/* Section CTA sombre — répétée sur plusieurs pages */
+section.section-cta {
+  background: var(--dark);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 0;
+}
+section.section-cta h2 {
+  color: #fff;
+  font-size: 1.8rem;
+}
+section.section-cta p {
+  color: rgba(255,255,255,0.75);
+  margin-top: 0.5rem;
 }

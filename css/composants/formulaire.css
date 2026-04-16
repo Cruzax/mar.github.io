@@ -27,6 +27,16 @@
   margin-bottom: 0.4rem;
 }
 
+/* Bouton de soumission pleine largeur */
+.btn-submit { padding: 1rem; font-size: 1rem; }
+
+/* Notes légales / RGPD dans les formulaires */
+.form-note { font-size: 0.85rem; color: var(--gris); }
+.form-note-sm { font-size: 0.8rem; color: var(--gris); }
+
+/* Champ conditionnel masqué par défaut */
+#spectacle-group { display: none; }
+
 /* Bloc d'info contact */
 .contact-info-item {
   display: flex;
