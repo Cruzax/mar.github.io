@@ -64,7 +64,7 @@ a:hover {
 .section-divider {
   height: 2px;
   width: 40px;
-  background: var(--ambre);
+  background: var(--jaune);
   margin-bottom: 2rem;
 }
 
@@ -81,12 +81,12 @@ a:hover {
 
 /* Couleurs d'icônes */
 .icon-rouge { color: var(--rouge); }
-.icon-ambre { color: var(--ambre); }
+.icon-jaune { color: var(--jaune); }
 .icon-dark  { color: var(--dark); }
 
 /* Icônes chevron dans listes */
 .chevron-rouge { color: var(--rouge); font-size: 1.1rem; flex-shrink: 0; }
-.chevron-ambre { color: var(--ambre); font-size: 1rem;  flex-shrink: 0; margin-top: 2px; }
+.chevron-jaune { color: var(--jaune); font-size: 1rem;  flex-shrink: 0; margin-top: 2px; }
 
 /* Légende photo */
 .photo-caption { font-size: 0.85rem; color: var(--gris); font-style: italic; margin-top: 0.5rem; }
@@ -106,8 +106,8 @@ a:hover {
   color: var(--rouge);
 }
 
-/* Puce décorative ambre dans les listes */
-.bullet-ambre { color: var(--ambre); font-size: 1.3rem; }
+/* Puce décorative jaune dans les listes */
+.bullet-jaune { color: var(--jaune); font-size: 1.3rem; }
 
 /* Petite note descriptive (grise, 0.9rem) */
 .text-note { font-size: 0.9rem; color: var(--gris); }

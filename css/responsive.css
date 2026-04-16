@@ -59,7 +59,7 @@
   /* Hero */
   .hero-carousel-wrap { height: 90vh; min-height: 460px; }
   .hero-ctas .btn-rouge,
-  .hero-ctas .btn-ambre { display: block; text-align: center; }
+  .hero-ctas .btn-jaune { display: block; text-align: center; }
 
   /* Carousel photos */
   .carousel-item img  { height: 240px; }

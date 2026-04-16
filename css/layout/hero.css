@@ -67,7 +67,7 @@
   font-weight: 500;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--ambre);
+  color: var(--jaune);
   margin-bottom: 0.75rem;
 }
 
@@ -76,7 +76,7 @@
   font-style: italic;
   font-size: 1.05rem;
   color: rgba(255, 255, 255, 0.88);
-  border-left: 2px solid var(--ambre);
+  border-left: 2px solid var(--jaune);
   padding-left: 1rem;
   margin: 0 0 1.75rem;
   line-height: 1.65;

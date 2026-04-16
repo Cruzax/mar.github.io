@@ -99,8 +99,8 @@
 
 .nuage-v-rouge     { background: var(--rouge);       color: #fff; box-shadow: 0 3px 10px rgba(200,57,42,0.25); }
 .nuage-v-rouge:hover     { background: #a82d22; }
-.nuage-v-ambre     { background: var(--ambre);       color: #fff; box-shadow: 0 3px 10px rgba(212,146,42,0.25); }
-.nuage-v-ambre:hover     { background: #b87a22; }
+.nuage-v-jaune     { background: var(--jaune);       color: #fff; box-shadow: 0 3px 10px rgba(212,146,42,0.25); }
+.nuage-v-jaune:hover     { background: #b87a22; }
 .nuage-v-dark      { background: var(--dark);        color: #fff; box-shadow: 0 3px 10px rgba(0,0,0,0.2); }
 .nuage-v-dark:hover      { background: #1a1918; }
 .nuage-v-terracotta { background: #B85C38;           color: #fff; box-shadow: 0 3px 10px rgba(184,92,56,0.22); }
@@ -139,7 +139,7 @@
   border-color: #F0D5D2;
 }
 .nuage-mot:nth-child(5n) {
-  background: var(--ambre-clair);
-  color: var(--ambre);
+  background: var(--jaune-clair);
+  color: var(--jaune);
   border-color: #F0DDB8;
 }

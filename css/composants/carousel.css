@@ -40,7 +40,7 @@
 }
 .carousel-indicators .active {
   opacity: 1;
-  background-color: var(--ambre-doux);
+  background-color: var(--jaune-doux);
 }
 
 /* Carousel témoignages */
@@ -80,14 +80,14 @@
   transition: background 0.2s;
   padding: 0;
 }
-.temo-dot-active   { background: var(--ambre); }
+.temo-dot-active   { background: var(--jaune); }
 .temo-dot-inactive { background: var(--gris-clair); }
 
 /* Séparateur décoratif dans les auteurs de témoignages */
 .temo-separator {
   width: 32px;
   height: 1px;
-  background: var(--ambre-doux);
+  background: var(--jaune-doux);
   margin: 0 auto 1rem;
 }
 
@@ -127,6 +127,6 @@
   flex-shrink: 0;
 }
 .temo-nav:hover {
-  border-color: var(--ambre);
-  color: var(--ambre);
+  border-color: var(--jaune);
+  color: var(--jaune);
 }

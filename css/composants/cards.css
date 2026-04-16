@@ -22,7 +22,7 @@
   margin-bottom: 1.2rem;
 }
 .service-card:nth-child(2) .card-icon {
-  color: var(--ambre);
+  color: var(--jaune);
 }
 .service-card h3 {
   font-family: 'DM Serif Display', Georgia, serif;
@@ -89,15 +89,15 @@
   background: var(--creme);
 }
 .objectif-card-rouge { border-top: 4px solid var(--rouge); }
-.objectif-card-ambre { border-top: 4px solid var(--ambre); }
+.objectif-card-jaune { border-top: 4px solid var(--jaune); }
 
 /* --- Encarts colorés (MAR acronyme / callouts) --- */
 .encart-rouge { background: var(--rouge); color: #fff; border-radius: 0.75rem; }
-.encart-ambre { background: var(--ambre); color: #fff; border-radius: 0.75rem; }
+.encart-jaune { background: var(--jaune); color: #fff; border-radius: 0.75rem; }
 .encart-dark  { background: var(--dark);  color: #fff; border-radius: 0.75rem; }
 /* Force la couleur blanche sur p et h4 à l'intérieur (p a sa propre couleur en base) */
-.encart-rouge p, .encart-ambre p, .encart-dark p,
-.encart-rouge h4, .encart-ambre h4, .encart-dark h4 { color: #fff; }
+.encart-rouge p, .encart-jaune p, .encart-dark p,
+.encart-rouge h4, .encart-jaune h4, .encart-dark h4 { color: #fff; }
 
 /* --- Placeholder photo membre (avant upload image) --- */
 .membre-placeholder { width: 100%; height: 280px; background: var(--creme-fonce); }
@@ -109,16 +109,16 @@
 .option-tab { padding: 0.75rem; color: #fff; }
 .option-tab p { color: #fff; margin: 0; }
 .option-tab-rouge { background: var(--rouge); }
-.option-tab-ambre { background: var(--ambre); }
+.option-tab-jaune { background: var(--jaune); }
 .option-tab-dark  { background: var(--dark); }
 
-/* --- Encadré highlight ambre --- */
+/* --- Encadré highlight jaune --- */
 .highlight-box {
-  background: var(--ambre);
+  background: var(--jaune);
   border-left: 4px solid var(--dark);
   padding: 0.75rem 1rem;
 }
-.highlight-box-plain { background: var(--ambre); padding: 0.75rem 1rem; }
+.highlight-box-plain { background: var(--jaune); padding: 0.75rem 1rem; }
 
 /* --- Badge numéroté 01 / 02 / 03 --- */
 .num-badge {
@@ -132,7 +132,7 @@
   flex-shrink: 0;
 }
 .num-badge-rouge { background: var(--rouge); color: #fff; }
-.num-badge-ambre { background: var(--ambre); color: var(--dark); }
+.num-badge-jaune { background: var(--jaune); color: var(--dark); }
 .num-badge-dark  { background: var(--dark);  color: #fff; }
 
 /* --- Cards actualités horizontales --- */
@@ -174,8 +174,8 @@
   line-height: 1.65;
   margin: 0;
 }
-.actu-badge-ambre {
-  background: var(--ambre-clair);
+.actu-badge-jaune {
+  background: var(--jaune-clair);
   color: #9a7200;
 }
 

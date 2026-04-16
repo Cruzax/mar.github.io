@@ -4,9 +4,9 @@
    ============================================= */
 
 /* ── Blocs Sur mesure / Clé en main ── */
-.spec-option-ambre {
+.spec-option-jaune {
   background: #EDE5D4;
-  border-top: 3px solid var(--ambre);
+  border-top: 3px solid var(--jaune);
 }
 .spec-option-rouge {
   background: #EDE0DE;
@@ -25,7 +25,7 @@
   display: block;
   margin-bottom: 0.4rem;
 }
-.spec-label-ambre { color: var(--ambre); }
+.spec-label-jaune { color: var(--jaune); }
 .spec-label-rouge { color: var(--rouge); }
 .spec-option-title {
   font-size: 1.15rem;
@@ -45,7 +45,7 @@
   .spec-option-desc           { display: none; }
   .spec-option-icon           { font-size: 1.2rem; margin-bottom: 0.4rem; }
   .spec-option                { padding: 1.25rem 0.75rem !important; }
-  .spec-option .btn-ambre,
+  .spec-option .btn-jaune,
   .spec-option .btn-rouge     { font-size: 0.72rem; padding: 0.35rem 0.75rem; letter-spacing: 0.5px; display: block; width: 100%; text-align: center; }
 }
 
@@ -53,13 +53,13 @@
   .spec-option-title          { font-size: 0.82rem; }
   .spec-label                 { font-size: 0.58rem; letter-spacing: 1px; }
   .spec-option                { padding: 1rem 0.5rem !important; }
-  .spec-option .btn-ambre,
+  .spec-option .btn-jaune,
   .spec-option .btn-rouge     { font-size: 0.68rem; padding: 0.3rem 0.5rem; }
 }
 
 /* Couleurs spécifiques aux catégories */
 /* --rouge   = Adultes (variable globale)    */
-/* --ambre   = Entreprise & Pro              */
+/* --jaune   = Entreprise & Pro              */
 /* #6B9E78   = Famille                       */
 /* #5B8AC8   = Jeunesse                      */
 /* var(--bonus)   = Bonus                         */
@@ -84,8 +84,8 @@
   color: var(--blanc);
 }
 .filtre-btn:hover:not(.active) {
-  background: var(--ambre);
-  border-color: var(--ambre);
+  background: var(--jaune);
+  border-color: var(--jaune);
   color: var(--blanc);
 }
 .filtre-btn.bonus { border-color: var(--bonus); color: var(--bonus); }
@@ -128,7 +128,7 @@
 }
 
 /* Variantes de couleur par catégorie */
-.pitch-card.entreprise { border-top-color: var(--ambre); }
+.pitch-card.entreprise { border-top-color: var(--jaune); }
 .pitch-card.famille    { border-top-color: #6B9E78; }
 .pitch-card.jeunesse   { border-top-color: #5B8AC8; }
 .pitch-card.bonus      { border-top-color: var(--bonus); }
@@ -144,7 +144,7 @@
   display: block;
   margin-bottom: 0.5rem;
 }
-.pitch-cat.entreprise { color: var(--ambre); }
+.pitch-cat.entreprise { color: var(--jaune); }
 .pitch-cat.famille    { color: #6B9E78; }
 .pitch-cat.jeunesse   { color: #5B8AC8; }
 .pitch-cat.bonus      { color: var(--bonus); }
@@ -211,7 +211,7 @@
   transition: opacity 0.2s;
 }
 .pitch-lire:hover { opacity: 0.75; }
-.pitch-card.entreprise .pitch-lire { color: var(--ambre); }
+.pitch-card.entreprise .pitch-lire { color: var(--jaune); }
 .pitch-card.famille    .pitch-lire { color: #6B9E78; }
 .pitch-card.jeunesse   .pitch-lire { color: #5B8AC8; }
 
@@ -224,7 +224,7 @@
   border-bottom: 2px solid var(--rouge);
   background: var(--creme);
 }
-.modal-header.entreprise { border-bottom-color: var(--ambre); }
+.modal-header.entreprise { border-bottom-color: var(--jaune); }
 .modal-header.famille    { border-bottom-color: #6B9E78; }
 .modal-header.jeunesse   { border-bottom-color: #5B8AC8; }
 
@@ -251,7 +251,7 @@
 .pitch-question {
   font-style: italic;
   color: var(--gris);
-  border-left: 2px solid var(--ambre-doux);
+  border-left: 2px solid var(--jaune-doux);
   padding-left: 1rem;
   margin: 1rem 0;
   font-size: 0.9rem;
@@ -259,10 +259,10 @@
 }
 
 /* ---- Blocs "Sur mesure / Clé en main" ---- */
-.spec-option-ambre { background: #EDE5D4; border-top: 4px solid var(--ambre); }
+.spec-option-jaune { background: #EDE5D4; border-top: 4px solid var(--jaune); }
 .spec-option-rouge { background: #EDE0DE; border-top: 4px solid var(--rouge); }
 .spec-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; display: block; }
-.spec-label-ambre { color: var(--ambre); }
+.spec-label-jaune { color: var(--jaune); }
 .spec-label-rouge { color: var(--rouge); }
 .spec-option-title {
   font-size: 1.15rem;
@@ -349,7 +349,7 @@
   text-transform: uppercase;
   color: var(--dark);
   margin: 1rem 0 0.5rem;
-  border-left: 2px solid var(--ambre);
+  border-left: 2px solid var(--jaune);
   padding-left: 0.6rem;
 }
 

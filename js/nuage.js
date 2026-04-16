@@ -7,7 +7,7 @@
     {t:'Forum',s:4},{t:'Jeux',s:2},{t:'Scène',s:3},{t:'Dialogue',s:4},
     {t:'Engagement',s:3},{t:'Créer',s:2},{t:'Expérimenter',s:3},{t:'Surprendre',s:2}
   ];
-  var variants=['nuage-v-rouge','nuage-v-ambre','nuage-v-dark','nuage-v-terracotta','nuage-v-ocre','nuage-v-ardoise'];
+  var variants=['nuage-v-rouge','nuage-v-jaune','nuage-v-dark','nuage-v-terracotta','nuage-v-ocre','nuage-v-ardoise'];
   var anims=['nuageFloat1','nuageFloat2','nuageFloat3'];
   var container=document.getElementById('nuageCloud');
   for(var i=words.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var tmp=words[i];words[i]=words[j];words[j]=tmp}

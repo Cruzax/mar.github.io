@@ -20,7 +20,7 @@ footer h5 {
 }
 
 footer a { color: #9A9895; }
-footer a:hover { color: var(--ambre-doux); text-decoration: none; }
+footer a:hover { color: var(--jaune-doux); text-decoration: none; }
 
 footer ul { list-style: none; padding: 0; }
 footer ul li { margin-bottom: 0.5rem; font-size: 0.88rem; }
@@ -34,7 +34,7 @@ footer ul li { margin-bottom: 0.5rem; font-size: 0.88rem; }
 }
 .footer-brand em {
   font-style: italic;
-  color: var(--ambre-doux);
+  color: var(--jaune-doux);
 }
 
 .footer-logo-placeholder {
@@ -65,7 +65,7 @@ footer ul li { margin-bottom: 0.5rem; font-size: 0.88rem; }
 }
 
 /* Icônes de contact dans le footer */
-.footer-icon { color: var(--ambre-doux); }
+.footer-icon { color: var(--jaune-doux); }
 
 /* Slogan/description sous le logo */
 .footer-slogan { font-size: 0.82rem; color: #C2BFB9; }
@@ -96,6 +96,6 @@ footer ul li { margin-bottom: 0.5rem; font-size: 0.88rem; }
   text-decoration: none !important;
 }
 .social-link:hover {
-  border-color: var(--ambre-doux);
-  color: var(--ambre-doux) !important;
+  border-color: var(--jaune-doux);
+  color: var(--jaune-doux) !important;
 }

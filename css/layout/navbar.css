@@ -87,7 +87,7 @@ body:has(.pitch-hero) { padding-top: 0; }
 }
 .nav-link:hover,
 .nav-link.active {
-  color: var(--ambre-doux) !important;
+  color: var(--jaune-doux) !important;
 }
 .navbar.scrolled .nav-link {
   color: var(--gris-fonce) !important;
@@ -137,13 +137,13 @@ body:has(.pitch-hero) { padding-top: 0; }
 .nav-cta,
 .nav-link.nav-cta,
 .nav-link.nav-cta.active {
-  background: var(--ambre);
+  background: var(--jaune);
   color: var(--blanc) !important;
   padding: 0.5rem 1.3rem !important;
   transition: background 0.2s;
 }
 .nav-cta:hover,
 .nav-link.nav-cta:hover {
-  background: var(--ambre-doux) !important;
+  background: var(--jaune-doux) !important;
   color: var(--blanc) !important;
 }

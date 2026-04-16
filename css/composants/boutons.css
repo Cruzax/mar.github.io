@@ -4,7 +4,7 @@
 
 /* Socle commun */
 .btn-rouge,
-.btn-ambre,
+.btn-jaune,
 .btn-outline {
   display: inline-block;
   border-radius: 2px;
@@ -30,15 +30,15 @@
   text-decoration: none;
 }
 
-/* Ambre — secondaire */
-.btn-ambre {
-  background: var(--ambre);
+/* Jaune — secondaire */
+.btn-jaune {
+  background: var(--jaune);
   color: var(--blanc);
-  border: 1.5px solid var(--ambre);
+  border: 1.5px solid var(--jaune);
 }
-.btn-ambre:hover {
-  background: var(--ambre-doux);
-  border-color: var(--ambre-doux);
+.btn-jaune:hover {
+  background: var(--jaune-doux);
+  border-color: var(--jaune-doux);
   color: var(--blanc);
   text-decoration: none;
 }
@@ -50,7 +50,7 @@
   border: 1.5px solid var(--gris-clair);
 }
 .btn-outline:hover {
-  border-color: var(--ambre);
-  color: var(--ambre);
+  border-color: var(--jaune);
+  color: var(--jaune);
   text-decoration: none;
 }

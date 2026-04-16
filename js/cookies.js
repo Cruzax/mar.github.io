@@ -25,7 +25,7 @@
     <div style="display:flex;align-items:center;flex-wrap:wrap;gap:1rem;max-width:1100px;margin:0 auto;">
       <p style="margin:0;flex:1;min-width:200px;font-size:0.875rem;">
         <strong>🍪 Cookies</strong> — Ce site utilise uniquement un cookie fonctionnel pour mémoriser vos préférences. Aucun cookie publicitaire ni de traçage.
-        <a href="mentions-legales.html#cookies" style="color:var(--ambre-doux);text-decoration:underline;margin-left:4px;">En savoir plus</a>
+        <a href="mentions-legales.html#cookies" style="color:var(--jaune-doux);text-decoration:underline;margin-left:4px;">En savoir plus</a>
       </p>
       <div style="display:flex;gap:.75rem;flex-shrink:0;">
         <button id="cookie-accept" style="background:var(--rouge);color:#fff;border:none;padding:.5rem 1.25rem;cursor:pointer;font-size:.875rem;font-family:inherit;">
