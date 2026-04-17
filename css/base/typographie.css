@@ -5,8 +5,8 @@
 *, *::before, *::after { box-sizing: border-box; }
 
 
-html { scroll-behavior: smooth; overflow-x: hidden; }
-body { overflow-x: hidden; }
+html { scroll-behavior: smooth; }
+body { overflow-x: clip; }
 
 body {
   font-family: 'DM Sans', 'Segoe UI', sans-serif;
